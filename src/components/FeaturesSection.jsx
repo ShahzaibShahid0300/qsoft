@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import image from "../assets/image.png";
+import image from "../assets/Image.png";
 
 export default function FeaturesSection() {
   const [animate, setAnimate] = useState(false);
