@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet";
 // page components inside components folder
 import About from "./components/About";
 import Products from "./components/Products";
-import Core from "./pages/core";
+import Core from "./pages/Core";
 import Lite from "./pages/Lite";
 import Features from "./components/Features";
 import Industries from "./components/Industries";
