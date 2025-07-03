@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet";
 // page components inside components folder
 import About from "./components/About";
 import Products from "./components/Products";
-import Core from "./pages/Core";
+import Hybrid from "./pages/Hybrid";
 import Lite from "./pages/Lite";
 import Features from "./components/Features";
 import Industries from "./components/Industries";
@@ -58,7 +58,7 @@ function App() {
         {/* Other routes */}
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/core" element={<Core />} />
+        <Route path="/products/core" element={<Hybrid />} />
         <Route path="/products/lite" element={<Lite />} />
         <Route path="/features" element={<Features />} />
         <Route path="/industries" element={<Industries />} />
