@@ -16,7 +16,7 @@ export default function FeaturesSection() {
         <title>Omnichannel ERP Features | QSoft ERP</title>
         <meta
           name="description"
-          content="Learn how QSoft Control ERP centralizes and streamlines your data with omnichannel support, giving you real-time updates and customer insights."
+          content="Explore how QSoft Control ERP streamlines your business operations through real-time data synchronization, centralized management, and omnichannel capabilities."
         />
       </Helmet>
 
@@ -28,22 +28,17 @@ export default function FeaturesSection() {
           }`}
         >
           <p className="italic text-gray-600 text-lg mb-2">
-            Power your business with omnichannel Control ERP
+            Seamlessly connect your business channels
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-            Centralize and streamline your <br /> data with Omni-channel ERP
+            Streamline operations and unify data with QSoft’s AIMS ERP
           </h2>
 
           {/* Blue line */}
           <div className="w-16 h-1 bg-sky-500 mx-auto md:mx-0 mb-6 rounded-full" />
 
           <p className="text-gray-700 text-base leading-relaxed">
-            Control ERP has brought the omnichannel feature for your ERP systems
-            to automatically synchronize and reflect real-time updates for any changes
-            in the back-end on all the selling channels. <br />
-            The added benefits include customer insights,{" "}
-            <span className="text-sky-500 font-semibold">inventory</span> visibility,
-            and omnichannel sales benefits.
+            QSoft AIMS ERP delivers a centralized platform that ensures all your sales channels stay synchronized in real time. Access up-to-date inventory levels, comprehensive customer data, and critical business insights—all designed to improve efficiency and customer satisfaction. Simplify your workflows and empower growth with a scalable ERP solution tailored for modern enterprises.
           </p>
         </div>
 
@@ -55,7 +50,7 @@ export default function FeaturesSection() {
         >
           <img
             src={image}
-            alt="ERP team working together"
+            alt="Team collaborating on ERP solution"
             className="w-full h-auto object-cover rounded-xl shadow-xl hover:scale-105 transition-transform duration-500"
           />
         </div>
