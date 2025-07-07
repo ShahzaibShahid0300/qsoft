@@ -4,15 +4,15 @@ import { Helmet } from "react-helmet";
 const slides = [
   {
     image: "image/1.jpg",
-    title: "Orchestrate An Omnichannel Approach",
+    title: "Streamline Business Operations",
   },
   {
     image: "image/2.jpg",
-    title: "Drive Growth With Digital Retail",
+    title: "Empower Teams With Integrated ERP",
   },
   {
     image: "image/3.png",
-    title: "Deliver Personalized Journeys",
+    title: "Make Data-Driven Decisions",
   },
 ];
 
