@@ -66,9 +66,6 @@ export default function Navbar() {
             <Link to="/products">Products</Link>
           </li>
           <li className="cursor-pointer py-3">
-            <Link to="/features">Features</Link>
-          </li>
-          <li className="cursor-pointer py-3">
             <Link to="/industries">Industries</Link>
           </li>
           <li className="cursor-pointer py-3">
@@ -117,9 +114,6 @@ export default function Navbar() {
           </li>
           <li className="py-1">
             <Link to="/products">Products</Link>
-          </li>
-          <li className="py-1">
-            <Link to="/features">Features</Link>
           </li>
           <li className="py-1">
             <Link to="/industries">Industries</Link>
