@@ -47,8 +47,6 @@ function App() {
               <FeatureGrid />
               <FeaturesSection />
               <ClientSection />
-              <FeaturesSectionTwo />
-              <StatsSection />
               <CaseStudySlider />
               <OurPortfolio />
             </>
