@@ -23,7 +23,7 @@ const FloatingButtons = () => {
   };
 
   // WhatsApp number (replace with your number)
-  const whatsappNumber = "1234567890"; // Use country code, e.g. "923001234567"
+  const whatsappNumber = "+923224701262"; // Use country code, e.g. "923001234567"
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
