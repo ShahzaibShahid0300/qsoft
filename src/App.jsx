@@ -20,7 +20,7 @@ import Industries from "./components/Industries";
 import Solutions from "./components/Solutions";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-import FeaturesSectionTwo from "./components/FeaturesSectionTwo";
+//import FeaturesSectionTwo from "./components/FeaturesSectionTwo";
 
 function App() {
   return (
@@ -46,7 +46,6 @@ function App() {
               <FeatureGrid />
               <FeaturesSection />
               <ClientSection />
-              <FeaturesSectionTwo/>
               <CaseStudySlider />
               <OurPortfolio />
             </>
