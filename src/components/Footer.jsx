@@ -1,103 +1,68 @@
 import React from "react";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-gradient-to-tr from-[#0a0a0a] via-[#111111] to-[#222222] text-white pt-12 pb-8 shadow-inner"
-      role="contentinfo"
-    >
-      <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-        {/* Feature Section */}
-        <section
-          aria-labelledby="footer-features"
-          className="flex flex-col items-center text-center"
-        >
-          <h3
-            id="footer-features"
-            className="font-extrabold uppercase text-xl tracking-wider mb-6"
-          >
-            Features
-          </h3>
-          <ul className="space-y-3 text-sm font-semibold">
-            {[
-              "Inventory Management",
-              "Accounting",
-              "Purchase",
-              "Sales",
-              "Production Planning",
-              "Point Of Sale",
-              "HR & Payroll",
-              "Control ERP Commerce Integration",
-            ].map((item, idx) => (
-              <li
-                key={idx}
-                className="transition-transform duration-300 ease-in-out hover:text-[#00aeef] hover:scale-105 cursor-pointer"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
+    <footer className="mt-12 bg-white text-black px-10 py-10 text-center">
+      {/* top blue separator line */}
+      <div className="w-full h-px bg-[#00aeef] mb-6"></div>
 
-        {/* Services Section */}
-        <section
-          aria-labelledby="footer-services"
-          className="flex flex-col items-center text-center"
-        >
-          <h3
-            id="footer-services"
-            className="font-extrabold uppercase text-xl tracking-wider mb-6"
-          >
-            Services
-          </h3>
-          <ul className="space-y-3 text-sm font-semibold">
-            {["Implementation", "Development", "Support", "Training"].map(
-              (item, idx) => (
-                <li
-                  key={idx}
-                  className="transition-transform duration-300 ease-in-out hover:text-[#00aeef] hover:scale-105 cursor-pointer"
-                >
-                  {item}
-                </li>
-              )
-            )}
+      {/* top links section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
+        {/* Products */}
+        <nav>
+          <h6 className="text-sm font-bold uppercase mb-4">Products</h6>
+          <ul className="space-y-2 text-sm">
+            <li className="hover:text-[#00aeef] cursor-pointer">AIMS ERP Hybrid</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">AIMS ERP Standard</li>
           </ul>
-        </section>
+        </nav>
 
-        {/* Related Links Section */}
-        <section
-          aria-labelledby="footer-related-links"
-          className="flex flex-col items-center text-center"
-        >
-          <h3
-            id="footer-related-links"
-            className="font-extrabold uppercase text-xl tracking-wider mb-6"
-          >
-            Related Links
-          </h3>
-          <ul className="space-y-3 text-sm font-semibold">
-            {[
-              { text: "Contact Us", href: "/contact" },
-              { text: "Portfolio", href: "/portfolio" },
-              { text: "Case Study", href: "/case-study" },
-            ].map(({ text, href }, idx) => (
-              <li key={idx}>
-                <a
-                  href={href}
-                  className="transition-transform duration-300 ease-in-out hover:text-[#00aeef] hover:scale-105 inline-block"
-                  aria-label={`${text} page`}
-                >
-                  {text}
-                </a>
-              </li>
-            ))}
+        {/* Services */}
+        <nav>
+          <h6 className="text-sm font-bold uppercase mb-4">Services</h6>
+          <ul className="space-y-2 text-sm">
+            <li className="hover:text-[#00aeef] cursor-pointer">Implementation</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">Development</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">Support</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">Training</li>
           </ul>
-        </section>
+        </nav>
+
+        {/* Related Links */}
+        <nav>
+          <h6 className="text-sm font-bold uppercase mb-4">Related Links</h6>
+          <ul className="space-y-2 text-sm">
+            <li className="hover:text-[#00aeef] cursor-pointer">Contact Us</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">Portfolio</li>
+            <li className="hover:text-[#00aeef] cursor-pointer">Case Study</li>
+          </ul>
+        </nav>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-xs text-gray-400 px-4 select-none">
-        &copy; 2025 QSoft. All rights reserved.
+      {/* bottom section */}
+      <div className="flex flex-col items-center border-t border-gray-300 pt-6 mt-4 text-xs">
+        {/* social icons */}
+        <div className="flex gap-6 text-2xl mb-4">
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            className="hover:text-[#00aeef] transition"
+          >
+            <FaLinkedinIn />
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            className="hover:text-[#00aeef] transition"
+          >
+            <FaFacebookF />
+          </a>
+        </div>
+        {/* copyright */}
+        <div className="text-center text-black text-xs">
+          &copy; 2025 QSoft. All rights reserved.
+        </div>
       </div>
     </footer>
   );

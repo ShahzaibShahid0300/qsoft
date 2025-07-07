@@ -4,8 +4,6 @@ import HeroSlider from "./components/HeroSlider";
 import FeatureGrid from "./components/FeatureGrid";
 import FeaturesSection from "./components/FeaturesSection";
 import ClientSection from "./components/ClientSection";
-import FeaturesSectionTwo from "./components/FeaturesSectionTwo";
-import StatsSection from "./components/StatsSection";
 import CaseStudySlider from "./components/CaseStudySlider";
 import OurPortfolio from "./components/OurPortfolio";
 import Footer from "./components/Footer";
