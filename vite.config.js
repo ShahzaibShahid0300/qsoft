@@ -9,6 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+
   server: {
     // For development only
   }
