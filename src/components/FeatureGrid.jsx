@@ -43,7 +43,7 @@ export default function FeatureGrid() {
   }, []);
 
   return (
-    <section className="bg-white px-6 pb-24 pt-20">
+    <section className="bg-white dark:bg-[#1e3e62] px-6 pb-24 pt-20">
       <Helmet>
         <title>ERP Key Features | QSoft ERP</title>
         <meta
@@ -59,7 +59,7 @@ export default function FeatureGrid() {
             style={{
               transition: `opacity 800ms ease-out ${index * 200}ms, transform 800ms ease-out ${index * 200}ms`,
             }}
-            className={`group relative p-10 bg-white border border-gray-200 rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
+            className={`group relative p-10 bg-white dark:bg-[#25476c] border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
               transform
               ${animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}
               transition-all
@@ -71,17 +71,17 @@ export default function FeatureGrid() {
             `}
           >
             <div className="text-6xl mb-6">{feature.icon}</div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-[#cbd5e1]">
               {feature.title}
             </h2>
-            <p className="text-gray-600 leading-relaxed text-base">
+            <p className="text-gray-600 dark:text-[#cbd5e1]/80 leading-relaxed text-base">
               {feature.desc}
             </p>
 
             {/* Bottom animated border on hover */}
             <div
               className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[3px] transition-all duration-700 group-hover:w-4/5 origin-center rounded-full"
-              style={{ backgroundColor: "#1DA1F2" }}
+              style={{ backgroundColor: "#00aeef" }}
             ></div>
           </div>
         ))}
