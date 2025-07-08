@@ -58,7 +58,7 @@ function App() {
             <>
               <HeroSlider theme={theme} />
               <FeatureGrid theme={theme} />
-              <FeaturesSection />
+              <FeaturesSection theme={theme} />
               <ClientSection />
               <CaseStudySlider />
               <OurPortfolio />
