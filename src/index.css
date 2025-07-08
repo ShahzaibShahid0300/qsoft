@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-darkbg: '#6e6e6e',       // your chosen background gray
+    --color-primarytext: '#E0E0E0',  // light gray text
+    --color-accent: '#00aeef',       // hover blue
+}
+
 body {
   overflow-x: hidden;
 }

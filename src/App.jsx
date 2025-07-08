@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSlider from "./components/HeroSlider";
@@ -10,7 +11,6 @@ import Footer from "./components/Footer";
 import FloatingButtons from "./components/FloatingButtons";
 import { Helmet } from "react-helmet";
 
-// page components inside components folder
 import About from "./components/About";
 import Products from "./components/Products";
 import ProductCore from "./pages/ProductCore";
@@ -20,11 +20,26 @@ import Industries from "./components/Industries";
 import Solutions from "./components/Solutions";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-//import FeaturesSectionTwo from "./components/FeaturesSectionTwo";
 
 function App() {
+  // Manage theme state, default light or from localStorage
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       <Helmet>
         <title>ERP Solution | QSoft</title>
         <meta
@@ -34,16 +49,15 @@ function App() {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <Navbar />
+      <Navbar toggleTheme={toggleTheme} theme={theme} />
 
       <Routes>
-        {/* Home route shows all your current home components */}
         <Route
           path="/"
           element={
             <>
-              <HeroSlider />
-              <FeatureGrid />
+              <HeroSlider theme={theme} />
+              <FeatureGrid theme={theme} />
               <FeaturesSection />
               <ClientSection />
               <CaseStudySlider />
@@ -52,7 +66,6 @@ function App() {
           }
         />
 
-        {/* Other routes */}
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/core" element={<ProductCore />} />
@@ -61,8 +74,6 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/contact" element={<Contact />} />
-
-        {/* 404 Not Found */}
         <Route path="*" element={<NotFound />} />
       </Routes>
 

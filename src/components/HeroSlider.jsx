@@ -45,9 +45,9 @@ export default function HeroSlider() {
       ></div>
 
       {/* Overlay Content - LEFT aligned and low */}
-      <div className="absolute inset-0 bg-black/40 z-10 flex items-end justify-start px-4 md:px-20 pb-8 md:pb-14">
+      <div className="absolute inset-0 bg-black/40 dark:bg-[#0f172a]/70 z-10 flex items-end justify-start px-4 md:px-20 pb-8 md:pb-14">
         <div className="text-left text-white max-w-lg">
-          <h1 className="text-lg md:text-3xl font-semibold mb-4 whitespace-nowrap">
+          <h1 className="text-lg md:text-3xl font-semibold mb-4 whitespace-nowrap dark:text-[#cbd5e1]">
             {slides[current].title}
           </h1>
           {/* Buttons if you want in future:
@@ -69,7 +69,7 @@ export default function HeroSlider() {
           <div
             key={index}
             className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === current ? "bg-white" : "bg-white/40"
+              index === current ? "bg-white dark:bg-[#cbd5e1]" : "bg-white/40 dark:bg-[#cbd5e1]/40"
             }`}
             onClick={() => goToSlide(index)}
           />
