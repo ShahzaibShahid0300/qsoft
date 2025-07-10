@@ -45,7 +45,7 @@ const Products = () => {
           >
             Our Products
           </h1>
-          <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light">
+          <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-[#cbd5e1]">
             Discover powerful, flexible ERP software built to streamline and grow your business.
           </p>
         </section>
@@ -56,7 +56,7 @@ const Products = () => {
             {products.map(({ id, name, description, image, link }) => (
               <article
                 key={id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00aaff] max-w-[320px] mx-auto"
+                className="bg-white dark:bg-[#25476c] rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00aaff] max-w-[320px] mx-auto dark:shadow-[#00aeef]/60"
                 tabIndex={0}
                 aria-label={name}
               >
@@ -70,10 +70,12 @@ const Products = () => {
                 </div>
                 <div className="p-4 md:p-5">
                   <h2 className="text-2xl font-semibold mb-4 text-[#00aaff]">{name}</h2>
-                  <p className="text-gray-700 text-base leading-relaxed mb-6">{description}</p>
+                  <p className="text-gray-700 dark:text-[#cbd5e1] text-base leading-relaxed mb-6">
+                    {description}
+                  </p>
                   <Link
                     to={link}
-                    className="inline-block px-6 py-3 bg-[#00aaff] text-white font-semibold rounded-full shadow-md hover:bg-[#1e3e62] transition"
+                    className="inline-block px-6 py-3 bg-[#00aaff] text-white font-semibold rounded-full shadow-md hover:bg-black transition"
                     aria-label={`Learn more about ${name}`}
                   >
                     Learn More

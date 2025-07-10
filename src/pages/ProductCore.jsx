@@ -59,7 +59,7 @@ const ProductCore = () => {
 
       {/* Hero section with image */}
       <section
-        className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] text-white py-20 px-6 text-center"
+        className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] dark:from-[#1e3e62] dark:to-[#00aaff] text-white py-20 px-6 text-center"
         aria-labelledby="core-hero-title"
       >
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
@@ -68,10 +68,10 @@ const ProductCore = () => {
               id="core-hero-title"
               className="text-4xl md:text-6xl font-extrabold tracking-wide"
             >
-              Core
+              AIMS ERP Hybrid
             </h1>
             <p className="mt-4 text-lg md:text-xl font-light">
-              Discover the advanced capabilities of QSoft ERP Core, built to power your growing enterprise.
+              Discover the advanced capabilities of QSoft AIMS ERP, built to power your growing enterprise.
             </p>
           </div>
           <div className="flex-1">
@@ -85,18 +85,18 @@ const ProductCore = () => {
       </section>
 
       {/* Main content */}
-      <main className="flex flex-col md:flex-row max-w-7xl mx-auto p-4 md:p-8 gap-8">
+      <main className="flex flex-col md:flex-row max-w-7xl mx-auto p-4 md:p-8 gap-8 text-black dark:text-white">
         {/* Sidebar */}
         <aside className="w-full md:w-1/4">
-          <nav className="sticky top-4 bg-white rounded shadow p-4 space-y-3">
+          <nav className="sticky top-4 bg-white dark:bg-[#25476c] rounded shadow p-4 space-y-3">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
                 className={`block text-left w-full px-3 py-2 rounded transition font-semibold ${
                   activeSection === section.id
-                    ? "bg-[#0077b6] text-white"
-                    : "hover:bg-gray-100"
+                    ? "bg-[#00aaff] text-white"
+                    : "hover:bg-gray-100 dark:hover:bg-[#1e3e62]"
                 }`}
                 aria-current={activeSection === section.id ? "page" : undefined}
               >
@@ -107,11 +107,11 @@ const ProductCore = () => {
         </aside>
 
         {/* Content area */}
-        <section className="flex-1 bg-white rounded shadow p-6 border border-gray-200">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#005a9c] mb-4 border-b pb-2 border-[#0077b6]">
+        <section className="flex-1 bg-white dark:bg-[#25476c] rounded shadow p-6 border border-gray-200 dark:border-[#1e3e62]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#00aaff] mb-4 border-b pb-2 border-[#0077b6]">
             {sections.find((s) => s.id === activeSection)?.title}
           </h2>
-          <div className="text-gray-700 leading-relaxed">
+          <div className="text-gray-700 dark:text-[#cbd5e1] leading-relaxed">
             {typeof activeContent === "string" ? (
               <p>{activeContent}</p>
             ) : (
