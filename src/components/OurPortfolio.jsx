@@ -39,16 +39,18 @@ const portfolioItems = [
 const OurPortfolio = () => {
   return (
     <section aria-labelledby="portfolio-heading">
-      <div className="bg-[#00aeef] py-8">
+      {/* Heading section */}
+      <div className="py-8 bg-white dark:bg-[#1e3e62]">
         <h2
           id="portfolio-heading"
-          className="text-center text-3xl font-semibold text-white"
+          className="text-center text-3xl font-semibold text-black dark:text-white"
         >
           Our Portfolio
         </h2>
       </div>
 
-      <div className="relative px-4 bg-white py-12 mt-0 max-w-[92%] mx-auto rounded-xl shadow-xl">
+      {/* Slider section */}
+      <div className="relative px-4 py-12 mt-0 max-w-[95%] mx-auto rounded-xl shadow-xl bg-white dark:bg-[#1e3e62]">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{
@@ -71,13 +73,13 @@ const OurPortfolio = () => {
         >
           {portfolioItems.map((item, index) => (
             <SwiperSlide key={index}>
-              <article className="flex flex-col items-center text-center px-4 py-6 group transition hover:shadow-lg rounded-md">
+              <article className="flex flex-col items-center text-center px-4 py-6 group transition hover:shadow-lg rounded-md bg-white dark:bg-[#27496d]">
                 <img
                   src={item.img}
                   alt={`Portfolio: ${item.text.slice(0, 40)}...`}
                   className="h-40 object-contain mb-4 transition-transform duration-300 group-hover:scale-105 rounded-md"
                 />
-                <p className="text-black text-sm font-medium transition group-hover:text-[#00aeef]">
+                <p className="text-black dark:text-[#cbd5e1] text-sm font-medium transition group-hover:text-[#00aeef]">
                   {item.text}
                 </p>
               </article>
@@ -85,6 +87,7 @@ const OurPortfolio = () => {
           ))}
         </Swiper>
 
+        {/* Slider buttons */}
         <button
           aria-label="Previous Portfolio"
           className="portfolio-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#123149] text-white p-3 rounded-md z-10 focus:outline-none focus:ring-2 focus:ring-[#00aeef]"
