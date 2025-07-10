@@ -50,7 +50,7 @@ const OurPortfolio = () => {
       </div>
 
       {/* Slider section */}
-      <div className="relative px-4 py-12 mt-0 max-w-[95%] mx-auto rounded-xl shadow-xl bg-white dark:bg-[#1e3e62]">
+      <div className="relative px-10 py-12 mt-0 max-w-[90%] mx-auto rounded-xl shadow-xl bg-white dark:bg-[#1e3e62]">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{
@@ -73,7 +73,7 @@ const OurPortfolio = () => {
         >
           {portfolioItems.map((item, index) => (
             <SwiperSlide key={index}>
-              <article className="flex flex-col items-center text-center px-4 py-6 group transition hover:shadow-lg rounded-md bg-white dark:bg-[#27496d]">
+              <article className="flex flex-col items-center text-center px-4 py-6 group transition hover:shadow-lg rounded-md bg-white dark:bg-[#27496d] dark:shadow-[#00aeef]/60">
                 <img
                   src={item.img}
                   alt={`Portfolio: ${item.text.slice(0, 40)}...`}
