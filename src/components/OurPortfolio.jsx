@@ -50,7 +50,7 @@ const OurPortfolio = () => {
       </div>
 
       {/* Slider section */}
-      <div className="relative px-10 py-12 mt-0 max-w-[90%] mx-auto rounded-xl shadow-xl bg-white dark:bg-[#1e3e62]">
+      <div className="relative px-6 py-12 mt-0 max-w-[90%] mx-auto rounded-xl shadow-xl bg-white dark:bg-[#1e3e62]">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "QSoft ERP Core",
+    name: "QSoft AIMS ERP Hybrid",
     description:
       "A comprehensive ERP solution tailored for medium to large enterprises to streamline operations, manage inventory, finance, and human resources with ease.",
     image: "/image/hybrid.png",
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: "QSoft ERP Lite",
+    name: "QSoft AIMS ERP Standard",
     description:
       "A lightweight and affordable ERP solution designed for small businesses, offering essential features for sales, purchases, and basic accounting.",
     image: "/image/standard.jpeg",
@@ -33,10 +33,10 @@ const Products = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-white text-black dark:bg-[#1e3e62] dark:text-white">
         {/* Hero Section */}
         <section
-          className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] text-white py-20 px-6 text-center"
+          className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] dark:from-[#1e3e62] dark:to-[#00aaff] text-white py-20 px-6 text-center"
           aria-labelledby="products-hero-title"
         >
           <h1
@@ -56,7 +56,7 @@ const Products = () => {
             {products.map(({ id, name, description, image, link }) => (
               <article
                 key={id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#0077b6] max-w-[320px] mx-auto"
+                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00aaff] max-w-[320px] mx-auto"
                 tabIndex={0}
                 aria-label={name}
               >
@@ -69,11 +69,11 @@ const Products = () => {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <h2 className="text-2xl font-semibold mb-4 text-[#005a9c]">{name}</h2>
+                  <h2 className="text-2xl font-semibold mb-4 text-[#00aaff]">{name}</h2>
                   <p className="text-gray-700 text-base leading-relaxed mb-6">{description}</p>
                   <Link
                     to={link}
-                    className="inline-block px-6 py-3 bg-[#0077b6] text-white font-semibold rounded-full shadow-md hover:bg-[#005a9c] transition"
+                    className="inline-block px-6 py-3 bg-[#00aaff] text-white font-semibold rounded-full shadow-md hover:bg-[#1e3e62] transition"
                     aria-label={`Learn more about ${name}`}
                   >
                     Learn More

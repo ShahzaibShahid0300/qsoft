@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-12 bg-white dark:bg-[#000000] text-black dark:text-[#ffffff] px-10 py-10 text-center">
+    <footer className=" bg-white dark:bg-[#000000] text-black dark:text-[#ffffff] px-10 py-10 text-center">
       {/* top blue separator line */}
       <div className="w-full h-px bg-[#00aeef] mb-6"></div>
 
