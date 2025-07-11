@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "QSoft AIMS ERP Hybrid",
+    name: "AIMS ERP (Hybrid)",
     description:
       "A comprehensive ERP solution tailored for medium to large enterprises to streamline operations, manage inventory, finance, and human resources with ease.",
     image: "/image/hybrid.png",
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: "QSoft AIMS ERP Standard",
+    name: "AIMS ERP (Standard)",
     description:
       "A lightweight and affordable ERP solution designed for small businesses, offering essential features for sales, purchases, and basic accounting.",
     image: "/image/standard.jpeg",
@@ -52,34 +52,71 @@ const Products = () => {
 
         {/* Products Section */}
         <section className="px-6 py-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {products.map(({ id, name, description, image, link }) => (
               <article
                 key={id}
-                className="bg-white dark:bg-[#25476c] rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00aaff] max-w-[320px] mx-auto dark:shadow-[#00aeef]/60"
                 tabIndex={0}
                 aria-label={name}
+                className="bg-white dark:bg-[#25476c] shadow rounded-xl max-w-[320px] mx-auto cursor-pointer"
+                style={{ perspective: "1200px" }}
               >
-                <div className="overflow-hidden">
+                <div
+                  className="overflow-hidden rounded-t-xl transition-transform duration-700 ease-in-out transform will-change-transform"
+                  style={{
+                    transformStyle: "preserve-3d",
+                    transformOrigin: "center center",
+                    boxShadow: "0 8px 20px rgba(0, 0, 0, 0.15)",
+                  }}
+                  onMouseMove={(e) => {
+                    const card = e.currentTarget;
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+
+                    // Rotation limits
+                    const rotateX = ((y - centerY) / centerY) * 15;
+                    const rotateY = ((x - centerX) / centerX) * -15;
+
+                    // Shadow offset inversely proportional to rotateX, rotateY
+                    const shadowX = -rotateY * 1.5;
+                    const shadowY = rotateX * 1.5;
+
+                    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05) translateZ(30px)`;
+                    card.style.boxShadow = `
+                      ${shadowX}px ${shadowY}px 15px rgba(0, 174, 239, 0.5),
+                      ${shadowX / 2}px ${shadowY / 2}px 30px rgba(0, 174, 239, 0.25),
+                      0 8px 20px rgba(0, 0, 0, 0.1)
+                    `;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+                    e.currentTarget.style.boxShadow = "0 8px 20px rgba(0, 0, 0, 0.15)";
+                  }}
+                >
                   <img
                     src={image}
                     alt={name}
-                    className="w-full h-36 object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                    className="w-full h-36 object-cover"
                     loading="lazy"
                   />
                 </div>
-                <div className="p-4 md:p-5">
-                  <h2 className="text-2xl font-semibold mb-4 text-[#00aaff]">{name}</h2>
-                  <p className="text-gray-700 dark:text-[#cbd5e1] text-base leading-relaxed mb-6">
+                <div className="p-4">
+                  <h2 className="text-2xl font-semibold text-[#00aaff] mb-2 text-center">{name}</h2>
+                  <p className="text-gray-700 dark:text-[#cbd5e1] text-sm text-center leading-snug mb-4">
                     {description}
                   </p>
-                  <Link
-                    to={link}
-                    className="inline-block px-6 py-3 bg-[#00aaff] text-white font-semibold rounded-full shadow-md hover:bg-black transition"
-                    aria-label={`Learn more about ${name}`}
-                  >
-                    Learn More
-                  </Link>
+                  <div className="text-center">
+                    <Link
+                      to={link}
+                      className="inline-block bg-[#00aaff] text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-[#0077b6] transition"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
