@@ -59,7 +59,7 @@ export default function FeatureGrid() {
             style={{
               transition: `opacity 800ms ease-out ${index * 200}ms, transform 800ms ease-out ${index * 200}ms`,
             }}
-            className={`group relative p-10 bg-white dark:bg-[#25476c] border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
+            className={`group relative p-10 bg-white dark:bg-[#25476c] dark:shadow-[#00aeef]/70 border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
               transform
               ${animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}
               transition-all
