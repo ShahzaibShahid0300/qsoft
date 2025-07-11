@@ -54,12 +54,30 @@ const About = () => {
           </p>
         </section>
 
-        {/* Company Introduction */}
-        <section className="py-16 px-6 max-w-7xl mx-auto text-gray-800 dark:text-[#cbd5e1]">
-          <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Who We Are</h2>
-          <p className="max-w-4xl mx-auto text-center text-lg leading-relaxed">
-            Since 2010, QSoft has established itself as a trusted ERP software company, delivering integrated solutions that automate operations, improve accuracy, and enable smart decision-making. Our scalable ERP platforms are designed to meet the complex demands of modern businesses across diverse industries.
-          </p>
+        {/* Who We Are Section */}
+        <section className="py-10 px-6 max-w-7xl mx-auto text-gray-800 dark:text-[#cbd5e1]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">Who We Are</h2>
+              <p className="text-lg leading-relaxed text-left">
+                Since 2010, QSoft has established itself as a trusted ERP software company, delivering integrated
+                solutions that automate operations, improve accuracy, and enable smart decision-making. Our
+                scalable ERP platforms are designed to meet the complex demands of modern businesses across
+                diverse industries.
+              </p>
+            </div>
+
+            {/* Right: Image with angled left edge */}
+            <div>
+              <img
+                src="/image/about.png"
+                alt="QSoft Team"
+                className="w-full h-auto rounded-xl shadow-lg object-cover object-center clip-left-angled"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Mission & Vision */}
@@ -84,21 +102,22 @@ const About = () => {
         <section className="py-16 px-6 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-12 dark:text-white">Our Core Values</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
-            {coreValues.map(({ icon, title, description }, index) => {
-              const Icon = icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-default dark:bg-[#27496d] dark:shadow-[#00aeef]/60"
-                  tabIndex={0}
-                  aria-label={title}
-                >
-                  <Icon className="mx-auto h-16 w-16 text-[#00aeef] mb-4" />
-                  <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">{title}</h3>
-                  <p className="text-gray-600 dark:text-[#cbd5e1]">{description}</p>
-                </div>
-              );
-            })}
+            {coreValues.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-default dark:bg-[#27496d] dark:shadow-[#00aeef]/60"
+                tabIndex={0}
+                aria-label={item.title}
+              >
+                {React.createElement(item.icon, {
+                  className: "mx-auto h-16 w-16 text-[#00aeef] mb-4",
+                })}
+                <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 dark:text-[#cbd5e1]">{item.description}</p>
+              </div>
+            ))}
           </div>
         </section>
 
