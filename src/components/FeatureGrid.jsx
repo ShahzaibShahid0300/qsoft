@@ -71,7 +71,7 @@ export default function FeatureGrid() {
             `}
           >
             <div className="text-6xl mb-6">{feature.icon}</div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-[#cbd5e1]">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-[#00aeef]">
               {feature.title}
             </h2>
             <p className="text-gray-600 dark:text-[#cbd5e1]/80 leading-relaxed text-base">
