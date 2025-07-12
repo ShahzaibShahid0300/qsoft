@@ -84,21 +84,20 @@ const Lite = () => {
         </div>
       </section>
 
-      {/* Main content */}
-      <main className="flex flex-col md:flex-row max-w-7xl mx-auto p-4 md:p-8 gap-8 text-black dark:text-white">
+      {/* Main Content */}
+      <main className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 md:px-8 gap-8 py-12 text-black dark:text-white">
         {/* Sidebar */}
         <aside className="w-full md:w-1/4">
-          <nav className="sticky top-4 bg-white dark:bg-[#25476c] rounded shadow p-4 space-y-3">
+          <nav className="sticky top-4 bg-white dark:bg-[#25476c] rounded-xl shadow-md p-4 space-y-3">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className={`block text-left w-full px-3 py-2 rounded transition font-semibold ${
+                className={`block text-left w-full px-3 py-2 rounded-lg transition font-semibold focus:outline-none focus:ring-2 focus:ring-[#00aaff] ${
                   activeSection === section.id
                     ? "bg-[#00aaff] text-white"
-                    : "hover:bg-gray-100 dark:hover:bg-[#1e3e62]"
+                    : "hover:bg-gray-100 dark:hover:bg-[#1e3e62] text-black dark:text-white"
                 }`}
-                aria-current={activeSection === section.id ? "page" : undefined}
               >
                 {section.title}
               </button>
@@ -106,12 +105,12 @@ const Lite = () => {
           </nav>
         </aside>
 
-        {/* Content */}
-        <section className="flex-1 bg-white dark:bg-[#25476c] rounded shadow p-6 border border-gray-200 dark:border-[#1e3e62]">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#005a9c] dark:text-[#00aaff] mb-4 border-b pb-2 border-[#0077b6] dark:border-[#00aeef]">
+        {/* Content Area */}
+        <section className="flex-1 bg-white dark:bg-[#25476c] rounded-xl shadow-md p-6 border border-gray-200 dark:border-[#1e3e62]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#00aaff] mb-4 border-b pb-2 border-[#0077b6]">
             {sections.find((s) => s.id === activeSection)?.title}
           </h2>
-          <div className="text-gray-700 dark:text-[#cbd5e1] leading-relaxed">
+          <div className="text-gray-700 dark:text-[#cbd5e1] leading-relaxed space-y-4">
             {typeof activeContent === "string" ? (
               <p>{activeContent}</p>
             ) : (
