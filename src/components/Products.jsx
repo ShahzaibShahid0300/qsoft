@@ -7,7 +7,7 @@ const products = [
     id: 1,
     name: "AIMS ERP (Hybrid)",
     description:
-      "A comprehensive ERP solution tailored for medium to large enterprises to streamline operations, manage inventory, finance, and human resources with ease.",
+      "A versatile AI-Powered ERP Solution for your business with customizations available on user levelwithout any technical or programming expertise",
     image: "/image/hybrid.png",
     link: "/products/core",
   },
