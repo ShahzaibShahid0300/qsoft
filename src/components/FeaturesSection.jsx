@@ -31,7 +31,7 @@ export default function FeaturesSection() {
             Seamlessly connect your business channels
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-            Streamline operations and unify data with over AIMS ERP (Hybrid)
+            Streamline operations and unify data with our AIMS ERP (Hybrid)
           </h2>
 
           {/* Blue line */}
