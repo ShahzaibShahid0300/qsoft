@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Helmet } from "react-helmet";
 import { Check } from "lucide-react"; // ✅ Tick icon import
 
@@ -422,10 +423,11 @@ const sections = [
 
 const ProductCore = () => {
   const [activeSection, setActiveSection] = useState("overview");
-  const activeContent = sections.find((s) => s.id === activeSection)?.content;
+  const activeContent = sections.find((s) => s.id === activeSection);
 
   return (
     <>
+      {/* SEO Head */}
       <Helmet>
         <title>QSoft ERP Core Details</title>
         <meta
@@ -435,7 +437,7 @@ const ProductCore = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      {/* Hero section with image */}
+      {/* Hero Section */}
       <section
         className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] dark:from-[#1e3e62] dark:to-[#00aaff] text-white py-20 px-6 text-center"
         aria-labelledby="core-hero-title"
@@ -455,17 +457,21 @@ const ProductCore = () => {
           <div className="flex-1">
             <img
               src="/image/hybrid.png"
-              alt="QSoft ERP Core"
+              alt="AIMS ERP Hybrid Software Illustration"
               className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <main className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 md:px-8 gap-8 py-12 text-black dark:text-white dark:bg-[#1e3e62] ">
-        {/* Sidebar */}
-        <aside className="w-full md:w-1/4">
+      {/* Main Content Section */}
+      <main
+        className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 md:px-8 gap-8 py-12 text-black dark:text-white dark:bg-[#1e3e62]"
+        role="main"
+      >
+        {/* Navigation Sidebar */}
+        <aside className="w-full md:w-1/4" aria-label="Product navigation">
           <nav className="sticky top-4 bg-white dark:bg-[#25476c] rounded-xl shadow-md p-4 space-y-3">
             {sections.map((section) => (
               <button
@@ -476,6 +482,7 @@ const ProductCore = () => {
                     ? "bg-[#00aaff] text-white"
                     : "hover:bg-gray-100 dark:hover:bg-[#1e3e62] text-black dark:text-white"
                 }`}
+                aria-current={activeSection === section.id ? "page" : undefined}
               >
                 {section.title}
               </button>
@@ -483,18 +490,28 @@ const ProductCore = () => {
           </nav>
         </aside>
 
-        {/* Content Area */}
-        <section className="flex-1 bg-white dark:bg-[#25476c] rounded-xl shadow-md p-6 border border-gray-200 dark:border-[#1e3e62]">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#00aaff] mb-4 border-b pb-2 border-[#0077b6]">
-            {sections.find((s) => s.id === activeSection)?.title}
+        {/* Section Content */}
+        <section
+          className="flex-1 bg-white dark:bg-[#25476c] rounded-xl shadow-md p-6 border border-gray-200 dark:border-[#1e3e62]"
+          aria-labelledby={`${activeContent?.id}-title`}
+        >
+          <h2
+            id={`${activeContent?.id}-title`}
+            className="text-2xl md:text-3xl font-bold text-[#00aaff] mb-4 border-b pb-2 border-[#0077b6]"
+          >
+            {activeContent?.title}
           </h2>
-          <div className="text-gray-700 dark:text-[#cbd5e1] leading-relaxed space-y-4">
-            {typeof activeContent === "string" ? (
-              <p>{activeContent}</p>
+          <article
+            className="text-gray-700 dark:text-[#cbd5e1] leading-relaxed space-y-4"
+            role="region"
+            aria-label={activeContent?.title}
+          >
+            {typeof activeContent?.content === "string" ? (
+              <p>{activeContent.content}</p>
             ) : (
-              activeContent
+              activeContent?.content
             )}
-          </div>
+          </article>
         </section>
       </main>
     </>
