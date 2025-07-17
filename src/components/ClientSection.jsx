@@ -34,7 +34,7 @@ const ClientSection = () => {
         .marquee {
           display: flex;
           width: max-content;
-          animation: scrollLeft 30s linear infinite;
+          animation: scrollLeft 40s linear infinite;
         }
       `}</style>
 

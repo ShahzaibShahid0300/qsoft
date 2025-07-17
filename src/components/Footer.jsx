@@ -4,56 +4,56 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className=" bg-white dark:bg-[#000000] text-black dark:text-[#ffffff] px-10 py-10 text-center">
-      {/* top blue separator line */}
       <div className="w-full h-px bg-[#00aeef] mb-6"></div>
 
-      {/* top links section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10">
-        {/* Products */}
         <nav>
           <h6 className="text-sm font-bold uppercase mb-4">Products</h6>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="/products/core" className="hover:text-[#00aeef] cursor-pointer">
-                AIMS ERP Hybrid
+                AIMS ERP (Hybrid)
               </a>
             </li>
             <li>
               <a href="/products/lite" className="hover:text-[#00aeef] cursor-pointer">
-                AIMS ERP Standard
+                AIMS ERP (Standard)
               </a>
             </li>
           </ul>
         </nav>
 
-        {/* Services */}
         <nav>
           <h6 className="text-sm font-bold uppercase mb-4">Services</h6>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="/services/implementation" className="hover:text-[#00aeef] cursor-pointer">
-                Implementation
+                Desktop App Development
               </a>
             </li>
             <li>
               <a href="/services/development" className="hover:text-[#00aeef] cursor-pointer">
-                Development
+                Web Development
               </a>
             </li>
             <li>
               <a href="/services/support" className="hover:text-[#00aeef] cursor-pointer">
-                Support
+                Mobile App Development
               </a>
             </li>
             <li>
               <a href="/services/training" className="hover:text-[#00aeef] cursor-pointer">
-                Training
+                Digital Marketing
+              </a>
+            </li>
+            <li>
+              <a href="/services/training" className="hover:text-[#00aeef] cursor-pointer">
+                IT Consultancy
               </a>
             </li>
           </ul>
         </nav>
 
-        {/* Related Links */}
         <nav>
           <h6 className="text-sm font-bold uppercase mb-4">Related Links</h6>
           <ul className="space-y-2 text-sm">
@@ -63,7 +63,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/portfolio" className="hover:text-[#00aeef] cursor-pointer">
+              {/* Changed Portfolio link to trigger file download */}
+              <a
+                href="/downloads/Q-Soft Company Profile.pdf"
+                download="Q-Soft Company Profile.pdf"
+                className="hover:text-[#00aeef] cursor-pointer"
+              >
                 Portfolio
               </a>
             </li>
@@ -71,12 +76,10 @@ const Footer = () => {
         </nav>
       </div>
 
-      {/* bottom section */}
       <div className="flex flex-col items-center border-t border-gray-300 pt-6 mt-4 text-xs">
-        {/* social icons */}
         <div className="flex gap-6 text-2xl mb-4">
           <a
-            href="https://www.linkedin.com/company/qsoft" // replace with your actual LinkedIn URL
+            href="https://www.linkedin.com/company/qsoft"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -85,7 +88,7 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.facebook.com/qsoft" // replace with your actual Facebook URL
+            href="https://www.facebook.com/qsoft"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -94,7 +97,6 @@ const Footer = () => {
             <FaFacebookF />
           </a>
         </div>
-        {/* copyright */}
         <div className="text-center text-black dark:text-[#ffffff] text-xs">
           &copy; 2025 QSoft. All rights reserved.
         </div>
