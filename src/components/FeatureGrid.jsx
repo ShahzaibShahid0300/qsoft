@@ -9,12 +9,12 @@ export default function FeatureGrid() {
       desc: "Leverage automation and insights to expand sales channels and maximize profits.",
     },
     {
-      icon: "⚙️",
+      icon: "🌐",
       title: "Unified System Integration",
       desc: "Connect all your business functions into one seamless, efficient platform.",
     },
     {
-      icon: "🔌",
+      icon: "🤖",
       title: "Optimize Workflows",
       desc: "Automate routine tasks and improve operational efficiency across departments.",
     },
@@ -29,7 +29,7 @@ export default function FeatureGrid() {
       desc: "Adapt the ERP to support retail channels, inventory, and customer experience.",
     },
     {
-      icon: "⚙️",
+      icon: "🧩",
       title: "Flexible Customization",
       desc: "Tailor modules and reports to fit your unique business processes effortlessly.",
     },
@@ -60,14 +60,8 @@ export default function FeatureGrid() {
               transition: `opacity 800ms ease-out ${index * 200}ms, transform 800ms ease-out ${index * 200}ms`,
             }}
             className={`group relative p-10 bg-white dark:bg-[#25476c] dark:shadow-[#00aeef]/70 border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
-              transform
+              transform transition-all duration-1000 ease-out hover:-translate-y-2
               ${animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}
-              transition-all
-              hover:-translate-y-2
-              hover:shadow-2xl
-              hover:transition-transform
-              hover:duration-[1500ms]
-              hover:ease-in-out
             `}
           >
             <div className="text-6xl mb-6">{feature.icon}</div>
@@ -78,7 +72,6 @@ export default function FeatureGrid() {
               {feature.desc}
             </p>
 
-            {/* Bottom animated border on hover */}
             <div
               className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[3px] transition-all duration-700 group-hover:w-4/5 origin-center rounded-full"
               style={{ backgroundColor: "#00aeef" }}
