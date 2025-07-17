@@ -21,8 +21,10 @@ import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
 function App() {
-  // Manage theme state, default light or from localStorage
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "dark";
+  });
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -59,7 +61,6 @@ function App() {
               <FeatureGrid theme={theme} />
               <FeaturesSection theme={theme} />
               <ClientSection />
-              <OurPortfolio />
             </>
           }
         />
