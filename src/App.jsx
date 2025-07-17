@@ -5,7 +5,6 @@ import HeroSlider from "./components/HeroSlider";
 import FeatureGrid from "./components/FeatureGrid";
 import FeaturesSection from "./components/FeaturesSection";
 import ClientSection from "./components/ClientSection";
-import OurPortfolio from "./components/OurPortfolio";
 import Footer from "./components/Footer";
 import FloatingButtons from "./components/FloatingButtons";
 import { Helmet } from "react-helmet";
@@ -19,6 +18,13 @@ import Industries from "./components/Industries";
 import Solutions from "./components/Solutions";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
+
+// ✅ Solution detail pages from `pages/` folder (NOT inside components/)
+import SoftwareDevelopment from "./pages/SoftwareDevelopment";
+import WebDevelopment from "./pages/WebDevelopment";
+import MobileAppDevelopment from "./pages/MobileAppDevelopment";
+// import DigitalMarketing from "./pages/DigitalMarketing";
+// import ITConsultancy from "./pages/ITConsultancy";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -73,6 +79,14 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* ✅ Solution Pages from /pages */}
+        <Route path="/solutions/softwaredevelopment" element={<SoftwareDevelopment />} />
+        <Route path="/solutions/webdevelopment" element={<WebDevelopment />} />
+        <Route path="/solutions/mobileappdevelopment" element={<MobileAppDevelopment />} />
+        
+       
+
         <Route path="*" element={<NotFound />} />
       </Routes>
 
