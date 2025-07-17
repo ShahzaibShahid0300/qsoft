@@ -59,13 +59,21 @@ export default function FeatureGrid() {
             style={{
               transition: `opacity 800ms ease-out ${index * 200}ms, transform 800ms ease-out ${index * 200}ms`,
             }}
-            className={`group relative p-10 bg-white dark:bg-[#25476c] dark:shadow-[#00aeef]/70 border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-center text-center
-              transform transition-all duration-1000 ease-out hover:-translate-y-2
+            className={`group relative p-10 bg-white dark:bg-[#25476c] dark:shadow-[#00aeef]/70 border border-gray-200 dark:border-[#27496d] rounded-2xl shadow-2xl flex flex-col items-center justify-start text-center
+              transform
               ${animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}
+              transition-all
+              hover:-translate-y-2
+              hover:shadow-2xl
+              hover:transition-transform
+              hover:duration-[2500ms]
+              hover:ease-in-out
             `}
           >
-            <div className="text-6xl mb-6">{feature.icon}</div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-[#00aeef]">
+            <div className="text-6xl mb-6 flex items-center justify-center min-h-[3.5rem]">
+              {feature.icon}
+            </div>
+            <h2 className="text-2xl font-bold mb-3 text-gray-800 dark:text-[#00aeef]">
               {feature.title}
             </h2>
             <p className="text-gray-600 dark:text-[#cbd5e1]/80 leading-relaxed text-base">
