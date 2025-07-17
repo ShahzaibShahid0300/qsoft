@@ -97,12 +97,14 @@ const Products = () => {
                     e.currentTarget.style.boxShadow = "0 8px 20px rgba(0, 0, 0, 0.15)";
                   }}
                 >
+                <Link to={link}>
                   <img
                     src={image}
                     alt={name}
                     className="w-full h-36 object-cover"
                     loading="lazy"
                   />
+                </Link>
                 </div>
                 <div className="p-4">
                   <h2 className="text-2xl font-semibold text-[#00aaff] mb-2 text-center">{name}</h2>
