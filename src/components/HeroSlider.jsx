@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 const slides = [
   {
-    image: "image/1.jpg",
+    image: "image/11.jpg",
     title: "Streamline Business Operations",
   },
   {
@@ -11,7 +11,7 @@ const slides = [
     title: "Empower Teams With Integrated ERP",
   },
   {
-    image: "image/3.png",
+    image: "image/33.jpg",
     title: "Make Data-Driven Decisions",
   },
 ];
@@ -29,7 +29,7 @@ export default function HeroSlider() {
   const goToSlide = (index) => setCurrent(index);
 
   return (
-    <div className="relative h-[360px] md:h-[440px] w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
       <Helmet>
         <title>{slides[current].title} | QSoft ERP</title>
         <meta
@@ -50,16 +50,7 @@ export default function HeroSlider() {
           <h1 className="text-lg md:text-3xl font-semibold mb-4 whitespace-nowrap dark:text-[#cbd5e1]">
             {slides[current].title}
           </h1>
-          {/* Buttons if you want in future:
-          <div className="flex gap-3 flex-wrap">
-            <button className="bg-[#00aeef] text-white px-5 py-1.5 md:px-6 md:py-2 text-sm md:text-sm rounded font-medium shadow">
-              Schedule Demo
-            </button>
-            <button className="bg-[#00aeef] text-white px-5 py-1.5 md:px-6 md:py-2 text-sm md:text-sm rounded font-medium shadow">
-              Learn More
-            </button>
-          </div>
-          */}
+          {/* Buttons can go here if needed */}
         </div>
       </div>
 
@@ -69,7 +60,9 @@ export default function HeroSlider() {
           <div
             key={index}
             className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === current ? "bg-white dark:bg-[#cbd5e1]" : "bg-white/40 dark:bg-[#cbd5e1]/40"
+              index === current
+                ? "bg-white dark:bg-[#cbd5e1]"
+                : "bg-white/40 dark:bg-[#cbd5e1]/40"
             }`}
             onClick={() => goToSlide(index)}
           />
