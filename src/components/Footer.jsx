@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="flex flex-col items-center border-t border-gray-300 pt-6 mt-4 text-xs">
         <div className="flex gap-6 text-2xl mb-4">
           <a
-            href="https://www.linkedin.com/company/qsoft"
+            href="https://www.linkedin.com/company/40727163/admin/dashboard/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -92,7 +92,7 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.facebook.com/qsoft"
+            href="http://facebook.com/qsoft.pk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"

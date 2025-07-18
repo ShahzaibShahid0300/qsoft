@@ -129,7 +129,7 @@ const About = () => {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-white dark:bg-[#1e3e62] text-[#00aeef] font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100 transition"
+            className="inline-block bg-white text-[#00aeef] font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100 transition"
           >
             Get in Touch
           </a>
