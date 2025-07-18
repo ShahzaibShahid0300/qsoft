@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import HeroSlider from "./components/HeroSlider";
 import FeatureGrid from "./components/FeatureGrid";
@@ -56,6 +57,7 @@ function App() {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
+      <ScrollToTop />
       <Navbar toggleTheme={toggleTheme} theme={theme} />
 
       <Routes>
