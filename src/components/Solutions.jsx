@@ -35,7 +35,7 @@ const solutions = [
       "Boost your brand visibility and ROI with result-driven digital marketing strategies — from SEO and PPC to social media campaigns.",
     image: "/image/digital-marketing.jpeg",
     direction: "right",
-    path: "/digitalmarketing",
+    path: "/solutions/digitalmarketing",
   },
   {
     title: "IT Consultancy",
@@ -43,7 +43,7 @@ const solutions = [
       "Leverage our expert IT consulting to align your technology with business goals, optimize infrastructure, and drive digital transformation.",
     image: "/image/it-consultancy.jpg",
     direction: "left",
-    path: "/itconsultancy",
+    path: "/solutions/itconsultancy",
   },
 ];
 

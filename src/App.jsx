@@ -23,8 +23,8 @@ import NotFound from "./components/NotFound";
 import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import WebDevelopment from "./pages/WebDevelopment";
 import MobileAppDevelopment from "./pages/MobileAppDevelopment";
-// import DigitalMarketing from "./pages/DigitalMarketing";
-// import ITConsultancy from "./pages/ITConsultancy";
+import DigitalMarketing from "./pages/DigitalMarketing";
+import ITConsultancy from "./pages/ITConsultancy";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -84,9 +84,9 @@ function App() {
         <Route path="/solutions/softwaredevelopment" element={<SoftwareDevelopment />} />
         <Route path="/solutions/webdevelopment" element={<WebDevelopment />} />
         <Route path="/solutions/mobileappdevelopment" element={<MobileAppDevelopment />} />
-        
+        <Route path="/solutions/digitalmarketing" element={<DigitalMarketing />} />
+        <Route path="/solutions/itconsultancy" element={<ITConsultancy />} />
        
-
         <Route path="*" element={<NotFound />} />
       </Routes>
 
