@@ -57,7 +57,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-gray-500 dark:text-[#cbd5e1]">Our Office</p>
                 <p className="text-md font-medium text-[#1e3e62] dark:text-white">
-                  QSoft HQ, Software Park, Islamabad, Pakistan
+                  15 Ghazi Road, Sector P, Phase 1, DHA, Lahore, Punjab - Pakistan.
                 </p>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-gray-500 dark:text-[#cbd5e1]">Email Us</p>
                 <p className="text-md font-medium text-[#1e3e62] dark:text-white">
-                  support@qsofterp.com
+                  info@qsoft.pk
                 </p>
               </div>
             </div>
@@ -77,7 +77,10 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-gray-500 dark:text-[#cbd5e1]">Call Us</p>
                 <p className="text-md font-medium text-[#1e3e62] dark:text-white">
-                  +92 300 1234567
+                  +92 300 9192114
+                </p>
+                <p className="text-md font-medium text-[#1e3e62] dark:text-white">
+                  +92 333 7444484
                 </p>
               </div>
             </div>
@@ -87,7 +90,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-gray-500 dark:text-[#cbd5e1]">Working Hours</p>
                 <p className="text-md font-medium text-[#1e3e62] dark:text-white">
-                  Mon – Sat: 9:00 AM – 6:00 PM
+                  Mon – Sat: 11:00 AM – 7:00 PM
                 </p>
               </div>
             </div>
@@ -96,7 +99,7 @@ const Contact = () => {
           {/* Social Icons */}
           <div className="mt-8 flex gap-4">
             <a
-              href="https://facebook.com/qsofterp"
+              href="http://facebook.com/qsoft.pk"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center bg-[#00aeef] hover:bg-[#0077b6] rounded-full text-white transition"
@@ -104,7 +107,7 @@ const Contact = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://linkedin.com/company/qsofterp"
+              href="https://www.linkedin.com/company/40727163/admin/dashboard/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center bg-[#00aeef] hover:bg-[#0077b6] rounded-full text-white transition"

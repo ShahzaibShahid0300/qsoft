@@ -18,146 +18,304 @@ const sections = [
     title: "Features",
     content: (
       <>
-        <h3 className="text-xl font-semibold mb-3">Here’s we’re going to describe a set of versatile AIMS ERP (Hybrid) Features:</h3>
+        <h3 className="text-xl font-semibold mb-3">AIMS (Standard) - Accounts & Inventory Management System</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard1.png"
+          alt="Standard Screenshot 1"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Complete Package for Any Business Domain</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard2.png"
+          alt="Standard Screenshot 2"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">INTRODUCTION</h3>
+        <p className="mt-3">
+          Plan, Source, Stock, Sell, Recover, and Analyze – all in one, unified IT platform. By integrating workflows and technology with your CUSTOMERS, SUPPLIERS, WORKFORCE, BUSINESS PROCESSES. You can find hidden ROI within your business and deliver meaningful customer experiences.
+        </p>
+        <p className="mt-3">
+          AIMS (standard) covers all aspects of accountancy as per the prescription of International Standards of Bookkeeping, Manages the Taxation, offers plenty of space for data management and assists the Management to perform the Business Operations smoothly.
+        </p>
+        <h3 className="text-xl font-semibold mb-3">User Login</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard3.png"
+          alt="Standard Screenshot 3"
+          className="w-64 h-120 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">DASHBOARD OVERVIEW</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard4.png"
+          alt="Standard Screenshot 4"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Accounts Management Module</li>
-          <li>Inventory Management Module</li>
-          <li>CRM CMS Module</li>
-          <li>Manufacturing / Production Module</li>
-          <li>HR / Payroll Management</li>
-          <li>Fixed Assets Management Module</li>
-          <li>Project Management Module</li>
-          <li>Documents Management Module</li>
-          <li>Cheque Management Module</li>
-          <li>POS Module</li>
-          <li>Tenancy Management Module</li>
-          <li>Budget Management Module</li>
+          <li>Dash board with a Real-Time</li>
+          <li>Graphical view of your Business</li>
+          <li>Purchases & Sales</li>
+          <li>Active & Inactive Products</li>
+          <li>Dead Sales Items</li>
+          <li>Reorder Items</li>
+          <li>Documents Statistics</li>
+          <li>Scheduled Tasks</li>
+          <li>To Do List</li>
         </ul>
-        <h3 className="text-xl font-semibold mb-3">Accounts Management Module</h3>
+        <h3 className="text-xl font-semibold mb-3">Accounts Management (AM)</h3>
         <p className="mt-3">
-          Accounts and Finance Module gives you the power to take control of your each and every financial decision. You can easily manage routine business transactions using our user friendly voucher system, Accounts Receivables and Accounts Payables.
+          AIMS (Standard) Accounts and Finance Module gives you the power to take control of your each and every financial decision. It is the best solution that reconciles progress and prosperity for the businesses in Pakistan.
         </p>
-        <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Manage Accounts Receivables & Accounts Payables</li>
-          <li>Manage Bank Received & Payment Vouchers</li>
-          <li>Manage Cash Received & Payment Vouchers</li>
-          <li>General Ledger / Accounts Ledger / Expense Ledger</li>
-          <li>Cash Book / Bank Book</li>
-          <li>Financial Reporting (Trial Balance, Profit & Loss, Balance Sheet)</li>
-          <li>And much more…</li>
-        </ul> 
-        <h3 className="text-xl font-semibold mb-3">Inventory Management Module</h3>
         <p className="mt-3">
-          Use Cutting-Edge automation and advanced routes to manage any warehouse Inventory. Track every stock move With AIMS ERP (Hybrid) Unique Double-Entry Inventory System and Instant Access any stock on your fingertips. Easy to Use and get the most efficient stocking and improve all your internal operations like Inventory Purchases, Sales, Stock Issue, Stock Received, Stock Transfer, Stock Adjustments between different locations or stores.
+          AIMS (Standard) Accounts and Finance Module works in accordance with the International Standards for Bookkeeping so that you can prepare your reports as per the auditory standards of Pakistan. Along with that, it gives you the complete and comprehensive report of your that, it gives you the complete and comprehensive report of your business performance which helps you in making strategic decisions for your organization.
         </p>
+        <p className="mt-3">
+          AIMS (Standard) offer all those services that are necessary to run a successful business. AIMS (Standard) accounts Module is one of our key services, and we have the upper hand because of our expertise in accounts and related fields. It is obvious that with such Financial Software Solutions in Pakistan businesses could cut their running cost and can maximize their profits. 
+        </p>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF AM</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Dynamic Product Chart with Multi-UOM</li>
-          <li>Inventory Forecasting & Valuations</li>
-          <li>Inventory Handling using Multiple Locations & Stores</li>
-          <li>Stock Received / Issued Note, Inward/Outward Gate Pass</li>
-          <li>Stock Transfer between Locations</li>
-          <li>Slow & Fast Moving Stock</li>
+          <li>Flexible GL Account (Chart of Account) and Sub-Account</li>
+          <li>Payment & Receipt Vouchers</li>
+          <li>Cash & Bank Vouchers with Cheques Management</li>
+          <li>Journal Vouchers</li>
+          <li>Ability to Create Custom Vouchers</li>
+          <li>Scheduled/Recurring Transactions</li>
+          <li>Reversing Entries</li>
+          <li>Bulk Payment and Receipt Entry</li>
+          <li>Auto Receipt and Payment for Cash</li>
+          <li>Transactions</li>
+          <li>Bank Reconciliation</li>
+          <li>Multi Level Trial Balance</li>
+          <li>Final Statements </li>
         </ul>
-        <h3 className="text-xl font-semibold mb-3">Sales Management Module</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard5.png"
+            alt="Standard Screenshot 5"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+          <img
+            src="/image/standard6.png"
+            alt="Standard Screenshot 6"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>  
+        <h3 className="text-xl font-semibold mb-3">Create Supplier & Customer</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard7.png"
+          alt="Standard Screenshot 7"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        <img
+          src="/image/standard8.png"
+          alt="Standard Screenshot 8"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Cash Received & Cash Payment Voucher</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard9.png"
+          alt="Standard Screenshot 9"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        <img
+          src="/image/standard10.png"
+          alt="Standard Screenshot 10"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Bank Received & Bank Payment Voucher</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard11.png"
+          alt="Standard Screenshot 11"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        <img
+          src="/image/standard12.png"
+          alt="Standard Screenshot 12"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Journal Voucher</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard13.png"
+          alt="Standard Screenshot 13"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Inventory Management (IM)</h3>            
         <p className="mt-3">
-          Enter Invoices with Ease. Easily create and maintain all your Quotes, Prepayments, A/R Payments, Sales Orders, Back Orders, Sales Invoices with a very intuitive user interface. Quickly copy and create new based on existing or convert Quotes to Sales Orders, Sales Orders to Delivery Orders, Delivery Orders to Sales Invoices and Sales Invoices to Returns saving you time. Be alerted to Customers Credit Limits or existing credits that can be applied to an order and lookup customers past history as well as the price they last paid for an item
+          One of the finest examples of First-In-First-Out Inventory Management Software development in Pakistan. With AIMS (Standard) Inventory and Warehouse Management it could become much easier. This comprehensive solution acts as the warehouse manager through its easy blistering features. It all begins with the Standard Inventory Management, in which the database solution offers plenty of slots to register your stock. It keeps on notifying the management about the current stock status and valuations.
         </p>
+        <p className="mt-3">
+          AIMS (Standard) Inventory and Warehouse Management Module makes the set of a complete business solution from Procure, Warehouse Management up to sales. It is a new definition of the Business Management tools that allows Advance Sales without disturbing Cost. And as a result prosperity is guaranteed. When it is about the business, the clientele matters a lot, as that is fundamental to earning a profit. With AIMS (Standard) Inventory and Warehouse Management, you can satisfy the needs of your clients without any delay. 
+        </p>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF IM</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Sales Inquiry / Quotations / Sales Order / Delivery Order</li>
-          <li>Sales Order Status</li>
-          <li>Sales Tax Invoice</li>
-          <li>Sales Invoice (Without Tax)</li>
-          <li>Sales Return</li>
-         </ul>  
-         <h3 className="text-xl font-semibold mb-3">Purchase Management Module</h3>
+          <li>Dynamic Product Chart with Multi Units of Measure</li>
+          <li>Active & In-Active Products</li>
+          <li>Unicode Language Option</li>
+          <li>Multiple Bar-coding</li>
+          <li>Advanced & Customized Filtration</li>
+          <li>Grouping & Categorization of Products</li>
+          <li>Automated & Manual Re-Order Management</li>
+          <li>Inventory Forecasting & Valuation</li>
+          <li>Inventory Optimization</li>
+          <li>Multiple Location/Warehouses</li>
+          <li>Warehouse Management</li>
+          <li>Billing & Invoicing</li>
+          <li>Purchase vs. Sales, History, Product Image</li>
+        </ul>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard14.png"
+            alt="Standard Screenshot 14"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+          <img
+            src="/image/standard15.png"
+            alt="Standard Screenshot 15"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>  
+        <h3 className="text-xl font-semibold mb-3">Add/Search Multiple Barcode & Batch Barcode Printing</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+        <img
+          src="/image/standard16.png"
+          alt="Standard Screenshot 16"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        <img
+          src="/image/standard17.png"
+          alt="Standard Screenshot 17"
+          className="w-full md:w-1/2 rounded shadow"
+        />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Purchase Order Management (POM)</h3>            
         <p className="mt-3">
-          Easily create and maintain all your Purchase Orders, Purchase Invoices, Prepayments and A/R Payments with a very intuitive user interface. Quickly copy and create new based on existing or convert Purchase Orders to Goods Received Note and Good Received Note to Purchase Invoices and Purchase Invoices to Purchase Returns saving you time. Be alerted to vendor credit limits or existing credits that can be applied to an order. Lookup vendors past order history and item pricing. Lookup vendor past history as well as the price you last paid for an item.
+          Smart Purchases are worthy for any business. AIMS (Standard) has a unique Purchase Order Management System that includes System Generated as well as Manual Purchase Order. Purchase Order Status and tracking system allows you to track that specific product.
         </p>
+        <p className="mt-3">
+         Purchase Invoices and Purchase Returns with Multi UOM allows to quick management of purchases. Document History and to quick management of purchases. Document History and Powerful Advanced Filtration allows you to track and quickly navigate from one document to other.
+        </p>
+         <p className="mt-3">
+         On-invoice Purchase Expenses Controls gives you easily load the delivery and handling costs on products to get accurate profit margins. The Dynamic On-Invoice Cash Payment allows you to directly settle down the liability of purchases.
+        </p>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF POM</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Purchase Requisitation / RFQ / Purchase Order / Goods Received Note</li>
-          <li>Purchase Order Status</li>
-          <li>Purchase Tax Invoice</li>
-          <li>Purchase Invoice (Without Tax)</li>
-          <li>Purchase Return</li>
-         </ul> 
-         <h3 className="text-xl font-semibold mb-3">CRM Module</h3>
+          <li>Full-functioned Management system for all purchases</li>
+          <li>Orders created in detail or in summary form</li>
+          <li>On-screen using stock items</li>
+          <li>All order transactions may be viewed, modified, printed and/or deleted up to the point when the goods are marked received.</li>
+          <li>Orders may be emailed directly to the Suppliers</li>
+          <li>Orders may be searched by Supplier, Date or by ‘KEY-WORD search’</li>
+          <li>Manual Purchase Order</li>
+          <li>Purchase History</li>
+          <li>Attachment with Every PO/PI </li>
+        </ul>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard18.png"
+            alt="Standard Screenshot 18"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+          <img
+            src="/image/standard19.png"
+            alt="Standard Screenshot 19"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>  
+        <h3 className="text-xl font-semibold mb-3">Sales Invoice Management (SIM)</h3>            
         <p className="mt-3">
-         At the heart of Sales & Marketing is one of the CRM module in which you can generate Leads, Opportunities creations and follow up a customer in each and every steps of routine deals. Check your customers history, Estimate/Quotes, To Do, Notes, Contacts, Emails, File Attachments, Activities, Analysis, Credit Limits etc. and much more.
+         Smart Sales are Healthy for any Business. AIMS (Standard) has a unique Sales Order Management System in Multi UOM that includes Sales Orders, Sales Invoice, and Sales Returns with on-invoice Expenses Controls and On-Invoice Cash Receipt along with Salesman Credit Balance Control System.
         </p>
+        <p className="mt-3">
+         Multiple Sales Discounts and Bonuses with FIFO method allows you to run smooth Business Operation. On-invoice Profit Calculator allows Management to calculate accurate Sales Margin in respected invoice.
+        </p>
+         <p className="mt-3">
+         Admin controlled rights to Edit & Delete Invoice. Multiple page size, Multiple Language prints gives you the ease of billing. This Module Allows you to make Advance Sales with accurate profit calculations. 
+        </p>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF SIM</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Create Leads, Opportunities, Campaign</li>
-          <li>Create Quotes / Estimates / Orders</li>
-          <li>Create To Do Tasks</li>
-          <li>Create Notes</li>
-         </ul> 
-         <h3 className="text-xl font-semibold mb-3">Manufacturing / Production Module</h3>
+          <li>Sales Orders</li>
+          <li>Sales Invoice, and Sales Returns</li>
+          <li>On-Invoice Expenses Controls</li>
+          <li>On-Invoice Cash Receipt along with Salesman Credit Balance control system.</li>
+          <li>Multiple Sales Discounts and Bonuses with</li>
+          <li>FIFO method</li>
+          <li>On-invoice Profit Calculator</li>
+          <li>Admin controlled rights to Edit & Delete</li>
+          <li>Invoice</li>
+          <li>Multiple Page Size and Language Prints.</li>
+          <li>Advance Sales with Accurate Profit</li>
+          <li>Calculations</li>
+          <li>Audit Tracking For Every Purchase Vs. Sales</li>
+          <li>On-invoice Detailed History</li>
+        </ul>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard20.png"
+            alt="Standard Screenshot 20"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+          <img
+            src="/image/standard21.png"
+            alt="Standard Screenshot 21"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Point of Sale (POS)</h3>            
         <p className="mt-3">
-         Streamline your entire manufacturing process to help you respond quickly to customer demands. The integrated manufacturing module gives you the tools you need including, bill of materials (BOM), Factory Overhead expenses, Raw Material Costs and routine Finished Goods / Production details etc.
+         AIMS (Standard) - POS offers flexible, high-speed Point-of-Sale software functionalities that are specifically designed for specialized retail operations, and can be used with Barcode Readers, Cash Drawers, Receipt Printers and Display Pole.
         </p>
+        <p className="mt-3">
+         Whether you need to manage a single retail location, operate a cash and carry business, or face the challenge of tying together a few brick and mortar stores, increase your accuracy.
+        </p>
+         <p className="mt-3">
+         This POS Software in Pakistan has been mainly designed to cut your transaction processing costs as well save your time so that you may do more and more business in less time.
+        </p>
+        <p className="mt-3">
+         Ahead of the ease, the AIMS (Standard) - POS assists you with keeping an eye on your stock. It makes a count of everything you have in your inventory and notifies you if anything is running out of stock. 
+        </p>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF SIM</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Production Planner</li>
-          <li>Finished Goods</li>
-          <li>Bill Of Material (BOM)</li>
-          <li>Outsource Manufacturing Handling</li>
-          <li>Raw Material Issuing Note</li>
-          <li>Control Daily / Monthly Production</li>
-          <li>Work Order</li>
-          <li>Control Raw Material Consumption</li>
-          <li>Work-In-Progress (WIP)</li>
-          <li>Control Factory Overheads (FOH)</li>
-          <li>And much more…</li>
-         </ul> 
-         <h3 className="text-xl font-semibold mb-3">HR Payroll Module</h3>
-        <p className="mt-3">
-          Helps you to prepare salary sheets in an efficient and timely manner with generation of all reports. It do comes with salary settings, holiday settings, attendance, pay heads, designations, advance payment, salary voucher and pay slip options.
-        </p>
-         <h3 className="text-xl font-semibold mb-3">Fixed Assets Module</h3>
-        <p className="mt-3">
-          Fixed Asset Management Module provides a central repository for storing and retrieving your asset records, allowing you to quickly look up information about a specific asset or group of assets. Check-in, Check-out, Assets Sales/Disposal details etc. Fixed Asset module is designed to work “out of the box” with very little configuration required. You can manage all kind of your organizations Assets and calculate Yearly/Monthly Depreciation with all the financial depreciation methods in a single click.
-        </p>
-         <h3 className="text-xl font-semibold mb-3">Project Management Module</h3>
-        <p className="mt-3">
-          Integrated Project Module is a powerful and comprehensive software designed to track, manage, and optimize your company's projects sourcing. You can managing all kind of project related routine task and resources utilizing for a specific project and calculate profit & loss for any project.
-        </p>
-         <h3 className="text-xl font-semibold mb-3">Documents Management Module</h3>
-        <p className="mt-3">
-          Our Document Management module allow you to store and download company's important documents in digital format within software and reduce paper work load. It's capable of keeping a record of the various versions created and modified by different users. You can manage all documents in one place under different grouping and categories option. Our purpose is to provide you most secure and paperless work for your business.
-        </p>
-         <h3 className="text-xl font-semibold mb-3">Cheques Management Module</h3>
-        <p className="mt-3">
-          Its Integrated applications helps you to efficiently manage Post Dated Cheques (PDC) Payable, Receivable and PDC clearance. Automatically convert PDC to Ledger Transactions, PDC Due Date Notifications an much more…
-        </p>
-         <h3 className="text-xl font-semibold mb-3">Point Of Sale (POS) Module</h3>
-        <p className="mt-3">
-          Point of Sale option will give you control over many different areas of your business operations increasing efficiency and profitability. It is easy to create new invoice within seconds. More suitable for counter sales.
-        </p>
-        <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>POS Quick Invoicing with Barcode Scanning or Manual Products Lookup Search</li>
-          <li>Print POS Receipts</li>
-          <li>Day Open and Day Closing option</li>
-          <li>Daily Day End Report</li>
-          <li>Barcode Labels Generating on fingertips</li>
-          <li>Customize Barcode Designing option</li>
-          <li>Check Profit Margin on POS Screen option</li>
-          <li>Daily / Monthly Sales Reports</li>
-          <li>And much more…</li>
-
-          {/*<li className="flex items-center gap-2">
-            <Check className="text-[#00aeef] flex-shrink-0" size={18} />
-              <span className="leading-tight">
-                This is your text which can be short or very very long spanning multiple lines.
-              </span>
-          </li> */}
-
-          {/* <li className="flex gap-2">
-            <div className="flex items-center" style={{ minHeight: 18, width: 18 }}>
-              <Check className="text-[#00aeef]" size={18} />
-            </div>
-            <span className="leading-tight">
-              Your text here.
-            </span>
-          </li> */}
-        </ul> 
+          <li>Sales Orders</li>
+          <li>Sales Invoice, and Sales Returns</li>
+          <li>On-Invoice Expenses Controls</li>
+          <li>On-Invoice Cash Receipt along with Salesman Credit Balance control system.</li>
+          <li>Multiple Sales Discounts and Bonuses with</li>
+          <li>FIFO method</li>
+          <li>On-invoice Profit Calculator</li>
+          <li>Admin controlled rights to Edit & Delete</li>
+          <li>Invoice</li>
+          <li>Multiple Page Size and Language Prints.</li>
+          <li>Advance Sales with Accurate Profit</li>
+          <li>Calculations</li>
+          <li>Audit Tracking For Every Purchase Vs. Sales</li>
+          <li>On-invoice Detailed History</li>
+        </ul>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard20.png"
+            alt="Standard Screenshot 20"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+          <img
+            src="/image/standard21.png"
+            alt="Standard Screenshot 21"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>
         <h3 className="text-xl font-semibold mb-3">Key Features</h3>
         <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
           {[
@@ -257,10 +415,10 @@ const Lite = () => {
               id="lite-hero-title"
               className="text-4xl md:text-6xl font-extrabold tracking-wide"
             >
-              AIMS ERP Standard
+              AIMS ERP (Standard)
             </h1>
             <p className="mt-4 text-lg md:text-xl font-light">
-              Discover QSoft AIMS ERP Standard — the perfect choice for growing small businesses.
+              Discover Q-Soft AIMS ERP Standard — the perfect choice for growing small businesses.
             </p>
           </div>
           <div className="flex-1">
