@@ -58,7 +58,7 @@ const WebDevelopment = () => {
             Q-Soft Technologies is a forward-thinking IT company providing innovative software solutions to businesses worldwide. With a passion for clean design and efficient systems, we empower companies through our ERP systems, digital solutions, and modern development services.
           </p>
           <p className="text-base md:text-lg text-gray-700 dark:text-slate-300">
-            Our team believes in building long-term partnerships by delivering value, consistency, and quality — whether you're launching a new website or upgrading an existing platform, Q-Soft is your reliable digital partner.
+            Our team believes in building long-term partnerships by delivering value, consistency, and quality — whether you're launching a new website or upgrading an existing platform, Q-Soft Technologies is your reliable digital partner.
           </p>
         </section>
 

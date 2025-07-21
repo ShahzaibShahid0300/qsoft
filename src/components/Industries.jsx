@@ -131,7 +131,7 @@ const Industries = () => {
             </h2>
           </div>
           <p className="text-lg text-gray-700 dark:text-[#cbd5e1] mb-8 max-w-2xl mx-auto">
-            QSoft AIMS ERP is built to evolve with your sector. Reach out to our team to learn how we
+            Q-Soft Technologies AIMS ERP is built to evolve with your sector. Reach out to our team to learn how we
             can customize the right solution for your industry.
           </p>
           <a

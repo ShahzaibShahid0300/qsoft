@@ -5,8 +5,8 @@ import { Lightbulb, ShieldCheck, Headphones, Layers } from "lucide-react";
 const coreValues = [
   {
     icon: Lightbulb,
-    title: "Innovation",
-    description: "We utilize advanced ERP technologies to build intelligent, modern business solutions.",
+    title: "Innovation with AI",
+    description: "Empowering business decisions with automation and smart insights through AI.",
   },
   {
     icon: ShieldCheck,
@@ -29,7 +29,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About QSoft ERP Solutions</title>
+        <title>About Q-Soft Technologies ERP Solutions</title>
         <meta
           name="description"
           content="Discover QSoft ERP—Pakistan's leading ERP software company empowering businesses with scalable, customizable, and user-friendly ERP systems."
@@ -47,7 +47,7 @@ const About = () => {
             id="about-hero-title"
             className="text-4xl md:text-6xl font-extrabold tracking-wide max-w-4xl mx-auto"
           >
-            About QSoft AIMS ERP
+            About Q-Soft Technologies AIMS ERP
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light dark:text-[#cbd5e1]">
             Driving business success through innovative ERP software solutions tailored for real-world growth.
@@ -61,10 +61,10 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">Who We Are</h2>
               <p className="text-lg leading-relaxed text-left">
-                Since 2010, QSoft has established itself as a trusted ERP software company, delivering integrated
+                Since 2010, Q-Soft Technologies has established itself as a trusted ERP software company, delivering integrated
                 solutions that automate operations, improve accuracy, and enable smart decision-making. Our
                 scalable ERP platforms are designed to meet the complex demands of modern businesses across
-                diverse industries.
+                diverse industries with innovative solutions.
               </p>
             </div>
 
@@ -125,7 +125,7 @@ const About = () => {
         <section className="bg-[#00aeef] py-12 px-6 text-white text-center rounded-t-3xl mt-12 max-w-5xl mx-auto shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Elevate Your Business?</h2>
           <p className="mb-6 max-w-xl mx-auto text-lg">
-            Get in touch today and discover how QSoft ERP can streamline your operations, save costs, and unlock growth potential.
+            Get in touch today and discover how Q-Soft Technologies ERP can streamline your operations, save costs, and unlock growth potential.
           </p>
           <a
             href="/contact"
