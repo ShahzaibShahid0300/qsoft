@@ -6,12 +6,128 @@ const sections = [
   {
     id: "overview",
     title: "Overview",
-    content: `QSoft ERP Lite is a lightweight and cost-effective ERP for small businesses, offering essential features to manage sales, purchases, inventory, and basic accounting with a user-friendly interface.`,
+    content: (
+      <>
+        <h3 className="text-xl font-semibold mb-3">
+          All-in-One Business Accounting & Inventory Solution
+        </h3>
+        <p>
+         AIMS (Standard) is a robust Accounts and Inventory Management System specifically tailored to meet the needs of growing businesses in Pakistan. Built on international standards of bookkeeping and financial control, it offers a fully integrated platform to Plan, Source, Stock, Sell, Recover, and Analyze your entire business lifecycle. It seamlessly unifies your operations with your customers, suppliers, employees, and processes, unlocking hidden ROI and improving productivity across the organization.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Powerful Financial Management
+        </h3>
+        <p className="mt-3">
+        The Accounts & Finance Module of AIMS (Standard) empowers businesses to maintain accurate records, manage transactions, and gain clear financial insights. It supports flexible GL accounts, journal vouchers, payment and receipt handling, and full bank reconciliation, allowing management to make informed, strategic decisions with confidence. With built-in compliance to international auditing standards, businesses can prepare reports that are audit-ready and fully transparent.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+         Smart Inventory Management
+        </h3>
+        <p className="mt-3">
+          AIMS (Standard) offers FIFO-based inventory tracking with real-time updates and forecasting tools. The Inventory Module helps register, monitor, and optimize stock levels using multi-unit measurement, batch barcoding, and automated reorder suggestions. Whether managing one warehouse or multiple locations, the system provides a centralized view of inventory and ensures efficient procurement-to-sales flow, minimizing losses and maximizing client satisfaction.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Smart Inventory Management
+        </h3>
+        <p className="mt-3">
+          AIMS (Standard) offers FIFO-based inventory tracking with real-time updates and forecasting tools. The Inventory Module helps register, monitor, and optimize stock levels using multi-unit measurement, batch barcoding, and automated reorder suggestions. Whether managing one warehouse or multiple locations, the system provides a centralized view of inventory and ensures efficient procurement-to-sales flow, minimizing losses and maximizing client satisfaction.
+        </p>
+    
+        <h3 className="text-xl font-semibold mb-3">
+          Efficient Purchase & Sales Operations
+        </h3>
+        <p className="mt-3">
+          With a streamlined Purchase Order Management (POM) system, businesses can generate and track purchase orders, manage supplier records, and accurately calculate costs including on-invoice expenses. The Sales Invoice Management (SIM) module includes advanced tools for sales orders, profit margin analysis, discount handling, and real-time sales reporting. Admin rights ensure data security, while support for multiple languages and formats enhances billing flexibility.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Retail-Ready Point of Sale (POS)
+        </h3>
+        <p className="mt-3">
+          Designed for retail environments, AIMS (Standard) includes a high-speed POS system that supports barcode scanners, receipt printers, cash drawers, and even credit/debit card processing. It synchronizes with the accounting and inventory modules, enabling businesses to track stock, handle multiple payment types, and process transactions offline or in the cloud. POS reports offer valuable insights into customer behavior, sales trends, and inventory performance.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Advanced Reporting & Business Intelligence
+        </h3>
+        <p className="mt-3">
+           The system includes over 100 customizable reports across various modules such as Sales, Inventory, Warehousing, Accounts, and Expenses. With powerful filters and export capabilities, reports can be generated in PDF, Excel, Word, HTML, or image formats. Managers can quickly assess key metrics like profit margins, overdue invoices, sales by product or salesman, and make data-driven decisions to grow the business.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+         User-Centric Features & Simplicity
+        </h3>
+        <p className="mt-3">
+           From role-based user access to easy document attachments, SMS device integration, and quick recovery tools, AIMS (Standard) is designed for usability and efficiency. It supports multi-level dashboards, reminder tools, and real-time insights — all contributing to smooth operations. Whether a startup or a scaling enterprise, AIMS (Standard) offers a comprehensive, scalable, and cost-effective ERP experience.
+        </p>
+      </>
+    ),
   },
   {
     id: "benefits",
     title: "Benefits",
-    content: `Affordable pricing, rapid deployment, ease of use, and scalable modules that let you start small and expand as your business grows.`,
+    content: (
+      <>
+        <h3 className="text-xl font-semibold mb-3">
+          Designed for Growing Businesses
+        </h3>
+        <p>
+         AIMS (Standard) is tailored specifically for small to medium-sized businesses in Pakistan. It delivers a complete suite of integrated tools for managing finances, inventory, sales, and operations. With a user-friendly interface and localized features, it simplifies complex processes and supports business growth without the overhead costs of large-scale ERP systems.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Affordable and Scalable ERP Solution
+        </h3>
+        <p className="mt-3">
+        Unlike many expensive ERP platforms, AIMS (Standard) offers an affordable pricing model without compromising on features. Its modular design ensures businesses only pay for what they use, while retaining the ability to scale seamlessly as operations expand. Whether managing a single branch or multiple locations, AIMS adapts to the organization’s needs over time.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+         Boosts Operational Efficiency
+        </h3>
+        <p className="mt-3">
+          By automating core accounting and inventory tasks, AIMS (Standard) minimizes manual work and reduces the chances of errors. From generating invoices and purchase orders to tracking stock and calculating taxes, the software simplifies day-to-day operations and enables faster decision-making.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Real-Time Visibility & Control
+        </h3>
+        <p className="mt-3">
+          AIMS (Standard) provides real-time data insights across your entire business — from sales and inventory levels to customer balances and expenses. This transparency empowers business owners to make informed decisions, avoid stock-outs, and control cash flow with confidence. It also reduces dependency on external consultants for everyday reporting.
+        </p>
+    
+        <h3 className="text-xl font-semibold mb-3">
+          Seamless Integration Across Departments
+        </h3>
+        <p className="mt-3">
+          All modules in AIMS (Standard) — including Accounts, Inventory, POS, Purchase, Sales, and Reporting — are interconnected. This means data entered in one module automatically updates related modules, eliminating duplication and ensuring consistency across departments. This integration enhances internal collaboration and workflow.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Localized Features for the Pakistani Market
+        </h3>
+        <p className="mt-3">
+          AIMS (Standard) is built with a deep understanding of local business practices, tax structures, and reporting needs. It supports Urdu and English interfaces, GST/SRB integration, and prepares audit-ready financials aligned with Pakistani regulatory standards. These features make compliance easy and reliable.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Robust Data Security & User Access Control
+        </h3>
+        <p className="mt-3">
+           The software offers role-based access controls, ensuring sensitive financial and operational data is only available to authorized users. Each employee can be granted specific rights to view or edit records, reducing risks and enforcing accountability. Frequent data backups and secure logins ensure business continuity.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+         Customer Support & Training
+        </h3>
+        <p className="mt-3">
+           AIMS (Standard) includes dedicated customer support and training resources. Whether it’s initial setup, migration from other platforms, or advanced usage queries, businesses receive expert guidance. This ensures maximum ROI and smooth adoption throughout the organization.
+        </p>
+      </>
+    ),
   },
   {
     id: "features",
@@ -34,13 +150,6 @@ const sections = [
           className="w-full md:w-1/2 rounded shadow"
         />
         </div>
-        <h3 className="text-xl font-semibold mb-3">INTRODUCTION</h3>
-        <p className="mt-3">
-          Plan, Source, Stock, Sell, Recover, and Analyze – all in one, unified IT platform. By integrating workflows and technology with your CUSTOMERS, SUPPLIERS, WORKFORCE, BUSINESS PROCESSES. You can find hidden ROI within your business and deliver meaningful customer experiences.
-        </p>
-        <p className="mt-3">
-          AIMS (standard) covers all aspects of accountancy as per the prescription of International Standards of Bookkeeping, Manages the Taxation, offers plenty of space for data management and assists the Management to perform the Business Operations smoothly.
-        </p>
         <h3 className="text-xl font-semibold mb-3">User Login</h3>
         <div className="flex flex-col md:flex-row gap-4 mb-4">
         <img
@@ -287,72 +396,249 @@ const sections = [
         <p className="mt-3">
          Ahead of the ease, the AIMS (Standard) - POS assists you with keeping an eye on your stock. It makes a count of everything you have in your inventory and notifies you if anything is running out of stock. 
         </p>
-        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF SIM</h3>
+        <h3 className="text-xl font-semibold mb-3">KEY FEATURES OF POS</h3>
         <ul className="list-disc list-inside text-gray-700 dark:text-[#cbd5e1] space-y-2">
-          <li>Sales Orders</li>
-          <li>Sales Invoice, and Sales Returns</li>
-          <li>On-Invoice Expenses Controls</li>
-          <li>On-Invoice Cash Receipt along with Salesman Credit Balance control system.</li>
-          <li>Multiple Sales Discounts and Bonuses with</li>
-          <li>FIFO method</li>
-          <li>On-invoice Profit Calculator</li>
-          <li>Admin controlled rights to Edit & Delete</li>
-          <li>Invoice</li>
-          <li>Multiple Page Size and Language Prints.</li>
-          <li>Advance Sales with Accurate Profit</li>
-          <li>Calculations</li>
-          <li>Audit Tracking For Every Purchase Vs. Sales</li>
-          <li>On-invoice Detailed History</li>
+          <li>Multiple Store Configuration</li>
+          <li>Multiple Payment types including on account</li>
+          <li>Integrated with Accounting System, GL, AR, Inventory, Commissions, Sales Reports</li>
+          <li>Supports Multiple-Barcode scanners</li>
+          <li>Cash Drawers, Slip & Laser printers</li>
+          <li>Supports Credit/Debit Cards</li>
+          <li>Customizable on-screen tab order for efficient data entry</li>
+          <li>Print to full page invoices or narrow</li>
+          <li>Column receipt printers</li>
+          <li>Hold an Invoice & Invoices History</li>
+          <li>Works offline and/or at Cloud</li>
         </ul>
         <div className="flex flex-col md:flex-row gap-4 mb-4">
           <img
-            src="/image/standard20.png"
-            alt="Standard Screenshot 20"
+            src="/image/standard22.png"
+            alt="Standard Screenshot 22"
             className="w-full md:w-1/2 rounded shadow"
           />
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Reports & Business Intelligence</h3>            
+        <p className="mt-3">
+         High Quality Business Reporting is the Heart of Strong & Sustainable Organization and allows management to make further decisions, including Customers & Suppliers, Products, Sales, Purchase, Receivables & Payables, Profit & Loss, Business’ Net Worth.
+        </p>
+        <p className="mt-3">
+         Real Time Transaction Reporting of Profit, Item Wise Profit Margin, Purchase Invoice wise Profits are very necessary to Margin, Purchase Invoice wise Profits are very necessary to make business decisions.
+        </p>
+         <p className="mt-3">
+         AIMS (Standard) - Reports includes more than 100 Customized Reports of Sales, Inventory, Warehouses, Accounts, Expenses, Salesman Reports, Financial Reports, With Very Powerful & Advance Customized Filtration, Export Facility To pdf, xls, xlsx, doc, jvs, HTML, image, text file, csv, Watermark Printing etc for day to day Business Activities. 
+        </p>
+        <h3 className="text-xl font-semibold mb-3">Business Intelligence</h3>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
           <img
-            src="/image/standard21.png"
-            alt="Standard Screenshot 21"
+            src="/image/standard23.png"
+            alt="Standard Screenshot 23"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard24.png"
+            alt="Standard Screenshot 24"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard25.png"
+            alt="Standard Screenshot 25"
+            className="w-full md:w-1/2 rounded shadow"
+          />
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <img
+            src="/image/standard26.png"
+            alt="Standard Screenshot 26"
             className="w-full md:w-1/2 rounded shadow"
           />
         </div>
         <h3 className="text-xl font-semibold mb-3">Key Features</h3>
+        <p className="mt-3">
+          Master
+        </p>
         <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
           {[
-            "First and only one ERP (HYBRID) solution in Pakistani Market means you can use our software on any device anywhere like Desktop (Windows) and Cloud (Web & Mobiles) with same data structure.",
-            "Each document has attachment facility means you can attach any type of related documents in PDF, Word, Picture or any other format with current document.",
-            "Built-in reports creating module means user can create any report or modify existing reports by himself without help of any developers.",
-            "Built-in form layout design/redesign feature means you can customize entire forms layout by just drag & drop",
-            "Highly secured user’s data entries mean you can catch even a single click of user in whole application with Audit Trail.",
-            "Analysis Any data with Charts / Graphs and save these analyses on user level for later analysis.",
-            "Create multiple customized Analysis for any module data using built-in charts and pivot table.",
-            "Developed using Latest Microsoft. Net Core Technologies with premium tools.",
-            "Extra-Ordinary High-Level user security features.",
-            "Built-In data validation rules applicable on user’s level.",
-            "Rich High-Level Excel Style unique data filtration",
-            "Most Importantly! First ERP in which we can make 60% customizable on user level by using our powerful built-in App Model.",
-            "Modern Sleek-Look User Interface (UI) with hundredth of eye-catching different themes/styles.",
-            "Multiple Dynamic Dashboard creation option/modification on user level.",
-            "Microsoft Word Style reporting creation options.",
-            "Copy one document to another document like sales to sales return, purchase to purchase return, cash payment voucher to cash received voucher and so on.",
-            "Mobile friendly search like a google.",
-            "Notes in all the documents editing using our built-in word just like a Microsoft word.",
-            "Three Levels data entry posting facility like Posted By, Checked By & Approved By.",
-            "Built-In SQL Query Builder to edit and deploy SQL database queries",
-            "Built-In Customized additional fields adding option on any form or document.",
-            "Top level Documents Security/Permission options like navigation permission options, Forms Type Permission options, Content’s or data levels permission options, Criteria based permission options with certain conditions.",
-            "Unlimited Chart of Accounts Level.",
-            "Powerful fixed Asset Management Modules with built-in auto Depreciation Schedule.",
-            "Conditional Appearance rules applicable on user level.",
-            "Built-In Customizable Barcode & QR-Code Generation module.",
-            "Built-In Font Size Change option to increase/decrease for all the application contents.",
-            "Drilldown option on every document to navigate data and quickly jump from one screen to another screen.",
-            "Unique delete feature means when user deleted a record it is recoverable any time by admin.",
-            "Built-in Office means you can use our own Microsoft Office like Word, Excel, PDF Reader, Scheduler as our own office without installing Microsoft Office.",
-            "Exporting & Emailing document like in PDF, Word, Excel, HTML, Image format etc...",
-            "Multiple Languages support.",
-            "Multiple Currencies Support.",
-            "And many more exciting features",
+            "Product Chart",
+            "Product Group Creation",
+            "Categories Creation",
+            "UOM Creation",
+            "Accounts Group",
+            "Chart Of Accounts",
+            "Edit Opening Balance",
+            "Create Service",
+            "Suppliers Center",
+            "Customers Center",
+            "Area/Route Creation",
+            "Create Store/Warehouse",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Accounts
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Cash Payment",
+            "Cash Received",
+            "Bank Payment",
+            "Bank Received",
+            "Bank Cheque Details",
+            "Journal Voucher",
+            "Quick Recovery",
+            "Service Voucher",
+            "Reports",
+            "Cash Book",
+            "Bank Book",
+            "Accounts (Ledger Wise)",
+            "All Product List With Stock",
+            "Purchases Reports",
+            "Purchase Day-Book",
+            "Purchases By Category",
+            "Sales Man Ledger ( Single Customer )",
+            "Sales Man General Ledger",
+            "Sales Man Activity Report",
+            "Customers Recovery By Area",
+            "AR Aging Report",
+            "Accounts Group Report",
+            "Expense Summery",
+            "All Ledger Summery Report",
+            "Accounts Activity",
+            "Transaction Activity Chart",
+            "Daily Business Activity",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Purchase
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Purchase Order",
+            "Purchase Invoice",
+            "Purchase Return",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Sales
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Sales Order",
+            "Sales Invoice",
+            "Sales Tax Invoice",
+            "Sales Return",
+            "Due Invoices List",
+            "Stock Transfer",
+            "Stock View By Store",
+            "Stock Adjustment",
+            "Bulk Price Change",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Barcodes
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Multiple Barcodes",
+            "Barcodes Printing",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Final Reports
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Trial Balance",
+            "Income Statement",
+            "Stock Valuation By Category",
+            "Product Sales By Customers",
+            "Re-Order Value Report",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Sales Report
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Bulk Invoice Printing",
+            "Godown Issue Summery",
+            "Over Due Invoices",
+            "Sales Day-Book",
+            "Sales Summery By Products",
+            "Daily Sale Report",
+            "Multi Level Sale Summery",
+            "Sales By Products",
+            "Sales By Sales Man",
+            "Monthly Sales Analyst",
+            "Dead Items Sales",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Purchases By Products
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Purchases By Supplier",
+            "Monthly Purchase Analyst",
+            "Order Level Report",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+         <p className="mt-3">
+          Tools
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Quick Search",
+            "Application Settings",
+            "SMS Device Connection",
+            "Transaction Posting",
+            "User Maintenance",
+            "Show Smart Menu",
+            "Calculate",
+            "Email",
+            "Network Computers ",
           ].map((item, index) => (
             <li key={index} className="flex items-center gap-2">
               <Check className="text-[#00aeef] flex-shrink-0" size={18} />
@@ -366,12 +652,77 @@ const sections = [
   {
     id: "customizable",
     title: "Customizable",
-    content: `Customize reports, fields, and user roles to adapt to your specific small business workflows with minimal technical skills required.`,
+    content: (
+      <>
+        <h3 className="text-xl font-semibold mb-3">
+          Tailored to Fit Your Unique Business Needs
+        </h3>
+        <p>
+         Every business operates differently, and AIMS (Standard) understands that one-size-fits-all solutions often fall short. That’s why the system is built with customization flexibility at its core, empowering businesses to shape the software according to their exact workflows and preferences.
+        </p>
+        <p>
+         From the very first setup, AIMS (Standard) allows you to choose and activate only the modules relevant to your operations—be it Accounting, Inventory, POS, Purchase, Sales, or Reporting. As your business grows, you can add more modules without needing a complete system overhaul.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Flexible Chart of Accounts & Reporting
+        </h3>
+        <p className="mt-3">
+          The system supports custom Chart of Accounts (COA) structures, allowing organizations to align their financial records with internal policies or external regulatory requirements. Reporting formats can also be customized, including branded invoice templates, tax summaries, and multi-level dashboards tailored to the management team’s KPIs.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+         User Roles, Access & Workflows
+        </h3>
+        <p className="mt-3">
+          With customizable user roles and permissions, you can control who accesses what within the platform. You can also define approval hierarchies, set up email alerts for specific actions, and create automated workflows that match your internal processes—whether for order approvals, stock transfers, or payment verifications.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-3">
+          Field Customization & Localization
+        </h3>
+        <p className="mt-3">
+          Businesses can rename fields, add custom fields to forms, and even hide or show data based on user type. The software supports both Urdu and English, and localized tax rules (GST/SRB) can be configured based on region and industry. Currency, units of measurement, and barcode formats are all adjustable.
+        </p>
+    
+        <h3 className="text-xl font-semibold mb-3">
+          Built for Adaptability
+        </h3>
+        <p className="mt-3">
+          Whether you are a retailer, wholesaler, manufacturer, or service provider, AIMS (Standard) provides the flexibility to adapt without needing any coding knowledge. Our technical team can also offer advanced customizations on request, helping businesses meet complex operational or compliance needs with ease.
+        </p>
+      </>
+    ),
   },
   {
     id: "whatsnew",
     title: "What's New",
-    content: `Version 2.1 introduces a faster dashboard, improved mobile support, and enhanced integration with popular accounting platforms.`,
+    content: (
+      <> 
+        <p className="mt-3">
+          What’s New in AIMS (Standard)
+        </p>
+        <ul className="space-y-3 text-gray-700 dark:text-[#cbd5e1]">
+          {[
+            "Revamped user interface with a fresh, modern, and intuitive layout for easier navigation across all devices.",
+            "Advanced reporting engine with 100+ customizable reports, filters, and export options (PDF, Excel, Word).",
+            "Smart document attachment system to link invoices, receipts, and contracts directly with transactions.",
+            "Enhanced security with role-based access control, OTP verification, login history, and auto session timeout.",
+            "Improved POS integration with faster barcode scanning, real-time sync, and offline support.",
+            "Auto reorder alerts based on stock thresholds and intelligent purchase suggestions.",
+            "AI-powered insights to predict sales trends, overdue payments, and slow-moving inventory.",
+            "Multi-language interface (English & Urdu) for broader accessibility and ease of use.",
+            "Email and SMS notification features for instant updates on purchases, sales, and payments.",
+            "Custom field creation in sales, purchase, customer, and product forms without development effort.",
+          ].map((item, index) => (
+            <li key={index} className="flex items-center gap-2">
+              <Check className="text-[#00aeef] flex-shrink-0" size={18} />
+              <span className="leading-tight">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </>
+    ),
   },
   {
     id: "brochure",
