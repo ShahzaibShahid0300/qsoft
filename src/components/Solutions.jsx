@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const solutions = [
   {
-    title: "Desktop App Development",
+    title: "Software Development",
     description:
       "From ERP to CRM, we develop scalable software tailored to your workflows, saving time and boosting productivity.",
     image: "/image/software-development.jpg",

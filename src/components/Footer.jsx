@@ -31,7 +31,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <Link to="/solutions/softwaredevelopment" className="hover:text-[#00aeef] cursor-pointer">
-                Desktop App Development
+                Software Development
               </Link>
             </li>
             <li>
@@ -67,13 +67,9 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="/downloads/Q-Soft Company Profile.pdf"
-                download="Q-Soft Company Profile.pdf"
-                className="hover:text-[#00aeef] cursor-pointer"
-              >
+              <Link to="/portfolio" className="hover:text-[#00aeef] cursor-pointer">
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

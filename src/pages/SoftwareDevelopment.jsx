@@ -23,7 +23,7 @@ const SoftwareDevelopment = () => {
         <div className="absolute inset-0 bg-black/50 dark:bg-[#1e3e62]/60 flex items-center justify-center text-center px-4">
           <div className="space-y-4 max-w-3xl">
             <h1 className="text-3xl md:text-5xl font-bold text-white">
-              Desktop Software Solutions
+              Software Development
             </h1>
             <p className="text-lg md:text-xl text-gray-200">
               Build powerful, secure, and efficient desktop applications to streamline your operations.

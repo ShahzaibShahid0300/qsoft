@@ -18,6 +18,7 @@ import Features from "./components/Features";
 import Industries from "./components/Industries";
 import Solutions from "./components/Solutions";
 import Contact from "./components/Contact";
+import PortfolioPage from "./pages/PortfolioPage";
 import NotFound from "./components/NotFound";
 
 // ✅ Solution detail pages from `pages/` folder (NOT inside components/)
@@ -30,7 +31,7 @@ import ITConsultancy from "./pages/ITConsultancy";
 function App() {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme : "dark";
+    return savedTheme ? savedTheme : "light";
   });
 
   useEffect(() => {
@@ -81,6 +82,8 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+
 
         {/* ✅ Solution Pages from /pages */}
         <Route path="/solutions/softwaredevelopment" element={<SoftwareDevelopment />} />
