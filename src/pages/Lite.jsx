@@ -769,7 +769,7 @@ const Lite = () => {
               AIMS ERP (Standard)
             </h1>
             <p className="mt-4 text-lg md:text-xl font-light">
-              Discover Q-Soft AIMS ERP Standard — the perfect choice for growing small businesses.
+              Discover Q-Soft Technologies AIMS ERP (Standard) — the perfect choice for growing small businesses.
             </p>
           </div>
           <div className="flex-1">
