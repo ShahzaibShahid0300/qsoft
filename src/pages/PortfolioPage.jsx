@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import portfolioPDF from "/downloads/Q-Soft Company Profile.pdf";
-import qsoftLogo from "../assets/qsoft logo.png";
+import qsoftLogo from "../assets/portfolio1.jpg";
 import heroBg from "../assets/portfolio.jpeg"; // ⬅️ You must have this background image
 
 const PortfolioPage = () => {

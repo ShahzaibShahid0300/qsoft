@@ -44,7 +44,9 @@ export default function Navbar({ toggleTheme, theme }) {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
-        isScrolled ? "bg-black/40 shadow-md dark:bg-[#1e3e62]" : "bg-transparent"
+        isScrolled
+          ? "backdrop-blur-lg bg-black/30 dark:bg-[#1e3e62]/80 shadow-lg border-b border-white/10"
+          : "bg-transparent"
       } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="max-w-[1600px] mx-auto flex items-center justify-between px-4 md:px-8 lg:px-12 xl:px-16 py-4">
@@ -54,13 +56,14 @@ export default function Navbar({ toggleTheme, theme }) {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex flex-1 justify-center gap-x-10 font-bold text-sm tracking-wide uppercase text-white dark:text-[#cbd5e1] whitespace-nowrap overflow-x-hidden">
+        <ul className="hidden lg:flex flex-1 justify-center gap-x-10 font-bold text-sm tracking-wide uppercase text-white dark:text-[#cbd5e1] whitespace-nowrap relative">
           <li className="cursor-pointer py-3 hover:text-[#00aeef] transition">
             <Link to="/">Home</Link>
           </li>
           <li className="cursor-pointer py-3 hover:text-[#00aeef] transition">
             <Link to="/about">About Us</Link>
           </li>
+
           <li className="cursor-pointer py-3 hover:text-[#00aeef] transition">
             <Link to="/products">Products</Link>
           </li>
@@ -119,7 +122,7 @@ export default function Navbar({ toggleTheme, theme }) {
           menuOpen ? "block" : "hidden"
         } bg-white dark:bg-black text-black dark:text-white px-6 py-4`}
       >
-        <ul className="flex flex-col items-center gap-4 font-semibold uppercase text-sm sm:text-base lg:text-lg">
+        <ul className="flex flex-col items-center gap-4 font-semibold uppercase text-sm sm:text-base">
           <li className="py-1 hover:text-[#00aeef] transition">
             <Link to="/">Home</Link>
           </li>
