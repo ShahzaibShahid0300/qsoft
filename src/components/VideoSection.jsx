@@ -59,7 +59,7 @@ export default function VideoSection() {
               src="/videos/QSoft_Video.mp4"
               controls
               poster="/videos/QSoft_Thumbnail.png"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               preload="metadata"
             >
               Your browser does not support the video tag.
