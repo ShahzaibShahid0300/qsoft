@@ -360,16 +360,12 @@ const sections = [
           <li>Sales Invoice, and Sales Returns</li>
           <li>On-Invoice Expenses Controls</li>
           <li>On-Invoice Cash Receipt along with Salesman Credit Balance control system.</li>
-          <li>Multiple Sales Discounts and Bonuses with</li>
-          <li>FIFO method</li>
+          <li>Multiple Sales Discounts and Bonuses with FIFO method</li>
           <li>On-invoice Profit Calculator</li>
-          <li>Admin controlled rights to Edit & Delete</li>
-          <li>Invoice</li>
+          <li>Admin-controlled permissions to edit and delete invoices</li>
           <li>Multiple Page Size and Language Prints.</li>
-          <li>Advance Sales with Accurate Profit</li>
-          <li>Calculations</li>
-          <li>Audit Tracking For Every Purchase Vs. Sales</li>
-          <li>On-invoice Detailed History</li>
+          <li>Advance Sales with Accurate Profit Calculations</li>
+          <li>Audit tracking for every purchase and sale, with on-invoice detailed history</li>
         </ul>
         <div className="flex flex-col md:flex-row gap-4 mb-4">
           <img

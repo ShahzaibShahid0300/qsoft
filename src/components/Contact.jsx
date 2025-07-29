@@ -107,23 +107,24 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map Section */}
-          <div
-            className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-[#27496d]"
-            data-aos="fade-left"
-          >
-            <iframe
-              title="QSoft Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5852531494124!2d73.0551!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952db9d7e8ef%3A0xf9b3ff781d17a7f3!2sIslamabad%20Software%20Technology%20Park!5e0!3m2!1sen!2s!4v1613759600876!5m2!1sen!2s"
-              width="100%"
-              height="100%"
-              className="w-full h-full min-h-[400px]"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+         {/* Map Section with Location Title */}
+          <div data-aos="fade-left">
+            <h3 className="text-lg font-semibold text-[#00aeef] mb-3">📌 Location</h3>
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-[#27496d]">
+                <iframe
+                  title="QSoft Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.484440059551!2d74.4056743746182!3d31.48336554897109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f5522075853%3A0xf2636d0b3e23edcf!2s15%20Ghazi%20Rd%2C%20Sector%20P%20Sector%20Q%20Dha%20Phase%201%2C%20Lahore%2C%2040050%2C%20Pakistan!5e0!3m2!1sen!2s!4v1753828234687!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  className="w-full h-full min-h-[400px]"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
           </div>
+
         </div>
       </section>
     </>

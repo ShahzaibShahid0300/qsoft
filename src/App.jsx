@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HeroSlider from "./components/HeroSlider";
 import FeatureGrid from "./components/FeatureGrid";
 import FeaturesSection from "./components/FeaturesSection";
+import VideoSection from "./components/VideoSection";
 import ClientSection from "./components/ClientSection";
 import Footer from "./components/Footer";
 import FloatingButtons from "./components/FloatingButtons";
@@ -69,6 +70,7 @@ function App() {
               <HeroSlider theme={theme} />
               <FeatureGrid theme={theme} />
               <FeaturesSection theme={theme} />
+              <VideoSection theme={theme}/>
               <ClientSection />
             </>
           }
