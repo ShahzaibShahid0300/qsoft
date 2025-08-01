@@ -13,7 +13,7 @@ export default function FeaturesSection() {
   return (
     <section className="w-full bg-white dark:bg-[#1e3e62] py-10 md:py-20 px-4 md:px-16">
       <Helmet>
-        <title>Omnichannel ERP Features | QSoft ERP</title>
+        <title>Home | Q-Soft Technologies</title>
         <meta
           name="description"
           content="Explore how QSoft Control ERP streamlines your business operations through real-time data synchronization, centralized management, and omnichannel capabilities."

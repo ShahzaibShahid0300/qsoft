@@ -40,7 +40,7 @@ const About = () => {
       <main className="overflow-x-hidden bg-white text-black dark:bg-[#1e3e62] dark:text-white">
         {/* Hero Section */}
         <section
-          className="relative bg-gradient-to-r from-[#0077b6] to-[#00aaff] dark:from-[#1e3e62] dark:to-[#00aaff] text-white py-20 px-6 text-center"
+          className="relative bg-gradient-to-r from-[#1A2A80] to-[#00aaff] dark:from-[#1e3e62] dark:to-[#00aaff] text-white py-20 px-6 text-center"
           aria-labelledby="about-hero-title"
         >
           <h1

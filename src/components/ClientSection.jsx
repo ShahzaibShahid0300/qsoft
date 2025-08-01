@@ -18,7 +18,7 @@ const ClientSection = () => {
   return (
     <section className="bg-white dark:bg-[#1e3e62] py-24 overflow-hidden">
       <Helmet>
-        <title>Trusted Clients | QSoft ERP</title>
+        <title>Home | Q-Soft Technologies</title>
         <meta
           name="description"
           content="QSoft ERP is trusted by clients across industries. See our partners who rely on our ERP solutions to power their businesses."
